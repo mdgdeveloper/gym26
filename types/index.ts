@@ -11,7 +11,8 @@ export interface Exercise {
   series: number;
   reps: string;                // "10-12" o "12" o "20s" (tiempo)
   rest: string;                // "90s", "2min"
-  weight?: string;             // "ligero", "50kg", etc (opcional)
+  weight?: string;             // "ligero", "50kg", etc (peso recomendado)
+  actualWeight?: string;       // peso real usado por el usuario
   steps: ExerciseStep[];       // pasos de ejecución
   tip?: string;                // consejo azul (opcional)
   alert?: string;              // alerta roja (opcional)

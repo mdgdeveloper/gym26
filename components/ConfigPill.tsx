@@ -1,4 +1,10 @@
-export default function ConfigPill({ label, value }: { label: string; value: string }) {
+export default function ConfigPill({ label, value, isWeight }: { label: string; value: string; isWeight?: boolean }) {
+  const weightStyle = isWeight ? {
+    background: "linear-gradient(135deg, rgba(91,163,255,0.15) 0%, rgba(91,163,255,0.08) 100%)",
+    border: "1px solid rgba(91,163,255,0.25)",
+    color: "var(--blue)",
+  } : {};
+
   return (
     <div
       style={{
@@ -9,10 +15,11 @@ export default function ConfigPill({ label, value }: { label: string; value: str
         fontWeight: 500,
         color: "var(--text-dim)",
         whiteSpace: "nowrap",
+        ...weightStyle,
       }}
     >
-      {label}{" "}
-      <span style={{ color: "var(--text)", fontWeight: 600 }}>{value}</span>
+      {isWeight && "⚖️ "}{label}{" "}
+      <span style={{ color: isWeight ? "var(--blue)" : "var(--text)", fontWeight: 600 }}>{value}</span>
     </div>
   );
 }

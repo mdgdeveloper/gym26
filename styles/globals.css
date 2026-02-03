@@ -16,6 +16,9 @@
   --blue: #5ba3ff;
   --blue-dim: rgba(91, 163, 255, 0.08);
   --blue-border: rgba(91, 163, 255, 0.2);
+  --green: #22c55e;
+  --green-dim: rgba(34, 197, 94, 0.1);
+  --green-border: rgba(34, 197, 94, 0.25);
   --orange: #ffaa44;
   --orange-dim: rgba(255, 170, 68, 0.12);
   --orange-border: rgba(255, 170, 68, 0.18);

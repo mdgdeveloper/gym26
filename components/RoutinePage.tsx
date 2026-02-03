@@ -4,12 +4,13 @@ import { useState, useEffect } from "react";
 import type { Routine, Exercise, SpecialBlock, Session, CompletedExercise } from "@/types";
 import PhaseDivider from "@/components/PhaseDivider";
 import ConfigPill from "@/components/ConfigPill";
+import WeightInput from "@/components/WeightInput";
 import { AlertBox, TipBox } from "@/components/InfoBoxes";
 
 /* ─── HELPERS ─── */
 function formatDate(iso: string) {
   const d = new Date(iso + "T00:00:00");
-  const months = ["enero","febrero","marzo","abril","mayo","junio","julio","agosto","septiembre","octubre","noviembre","diciembre"];
+  const months = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"];
   return `${d.getDate()} de ${months[d.getMonth()]}`;
 }
 
@@ -37,23 +38,50 @@ function saveSession(routine: Routine, completed: Record<string, boolean>) {
     if (idx >= 0) sessions[idx] = session;
     else sessions.push(session);
     localStorage.setItem("fitness_sessions", JSON.stringify(sessions));
-  } catch {}
+  } catch { }
+}
+
+function saveWeightHistory(routineId: string, exerciseId: string, weight: string) {
+  try {
+    const history: Record<string, Array<{ date: string, weight: string }>> =
+      JSON.parse(localStorage.getItem("fitness_weight_history") || "{}");
+
+    const key = `${routineId}_${exerciseId}`;
+    const today = new Date().toISOString().split("T")[0];
+
+    if (!history[key]) history[key] = [];
+
+    // Remove today's entry if it exists, then add new one
+    history[key] = history[key].filter(entry => entry.date !== today);
+    history[key].push({ date: today, weight });
+
+    // Keep only last 10 entries
+    history[key] = history[key].slice(-10);
+
+    localStorage.setItem("fitness_weight_history", JSON.stringify(history));
+  } catch { }
 }
 
 /* ─── EXPORT DEFAULT ─── */
 export default function RoutinePage({ routine }: { routine: Routine }) {
   const [openCard, setOpenCard] = useState<string | null>(null);
-  const [checked, setChecked] = useState<Record<string, boolean>>({});
-  const [mounted, setMounted] = useState(false);
-
-  // Cargar estado de checks desde localStorage
-  useEffect(() => {
-    setMounted(true);
+  const [checked, setChecked] = useState<Record<string, boolean>>(() => {
     try {
       const stored = localStorage.getItem(`fitness_checks_${routine.id}`);
-      if (stored) setChecked(JSON.parse(stored));
-    } catch {}
-  }, [routine.id]);
+      return stored ? JSON.parse(stored) : {};
+    } catch {
+      return {};
+    }
+  });
+  const [actualWeights, setActualWeights] = useState<Record<string, string>>(() => {
+    try {
+      const storedWeights = localStorage.getItem(`fitness_weights_${routine.id}`);
+      return storedWeights ? JSON.parse(storedWeights) : {};
+    } catch {
+      return {};
+    }
+  });
+  const [mounted, setMounted] = useState(true);
 
   // Guardar checks cada vez que cambian
   useEffect(() => {
@@ -62,12 +90,25 @@ export default function RoutinePage({ routine }: { routine: Routine }) {
     saveSession(routine, checked);
   }, [checked, mounted, routine]);
 
+  // Guardar pesos cada vez que cambian
+  useEffect(() => {
+    if (!mounted) return;
+    localStorage.setItem(`fitness_weights_${routine.id}`, JSON.stringify(actualWeights));
+  }, [actualWeights, mounted, routine.id]);
+
   const toggleCheck = (id: string) => {
     setChecked((prev) => ({ ...prev, [id]: !prev[id] }));
   };
 
   const toggleCard = (id: string) => {
     setOpenCard((prev) => (prev === id ? null : id));
+  };
+
+  const updateActualWeight = (exerciseId: string, weight: string) => {
+    setActualWeights((prev) => ({ ...prev, [exerciseId]: weight }));
+    if (weight.trim()) {
+      saveWeightHistory(routine.id, exerciseId, weight);
+    }
   };
 
   // Bloques especiales por tipo
@@ -183,6 +224,8 @@ export default function RoutinePage({ routine }: { routine: Routine }) {
             isChecked={!!checked[exercise.id]}
             onToggle={() => toggleCard(exercise.id)}
             onCheck={() => toggleCheck(exercise.id)}
+            actualWeight={actualWeights[exercise.id] || ""}
+            onWeightChange={(weight) => updateActualWeight(exercise.id, weight)}
           />
         ))}
 
@@ -201,6 +244,8 @@ export default function RoutinePage({ routine }: { routine: Routine }) {
                 isChecked={!!checked[exercise.id]}
                 onToggle={() => toggleCard(exercise.id)}
                 onCheck={() => toggleCheck(exercise.id)}
+                actualWeight={actualWeights[exercise.id] || ""}
+                onWeightChange={(weight) => updateActualWeight(exercise.id, weight)}
               />
             ))}
         </>
@@ -351,12 +396,16 @@ function ExerciseCard({
   isChecked,
   onToggle,
   onCheck,
+  actualWeight,
+  onWeightChange,
 }: {
   exercise: Exercise;
   isOpen: boolean;
   isChecked: boolean;
   onToggle: () => void;
   onCheck: () => void;
+  actualWeight: string;
+  onWeightChange: (weight: string) => void;
 }) {
   const isCore = exercise.type === "core";
   const isPrincipal = exercise.type === "principal";
@@ -454,10 +503,15 @@ function ExerciseCard({
 
       {/* Pills: series, reps, descanso */}
       <div style={{ padding: "0 16px 12px", display: "flex", gap: "8px", flexWrap: "wrap" }}>
+        {exercise.weight && <ConfigPill label="Peso recomendado" value={exercise.weight} isWeight={true} />}
+        <WeightInput
+          exerciseId={exercise.id}
+          actualWeight={actualWeight}
+          onWeightChange={onWeightChange}
+        />
         <ConfigPill label="Series" value={String(exercise.series)} />
         <ConfigPill label="Reps" value={exercise.reps} />
         <ConfigPill label="Descanso" value={exercise.rest} />
-        {exercise.weight && <ConfigPill label="Peso" value={exercise.weight} />}
       </div>
 
       {/* Panel expandible */}
