@@ -1,0 +1,69 @@
+@import "tailwindcss";
+
+/* ─── TEMA: Variables del diseño oscuro ─── */
+:root {
+  --bg: #0f1117;
+  --card: #1a1d27;
+  --card-light: #222633;
+  --accent: #e8ff41;
+  --accent-dim: rgba(232, 255, 65, 0.12);
+  --accent-border: rgba(232, 255, 65, 0.25);
+  --text: #e8eaed;
+  --text-dim: #8a8f9e;
+  --red: #ff5555;
+  --red-dim: rgba(255, 85, 85, 0.1);
+  --red-border: rgba(255, 85, 85, 0.25);
+  --blue: #5ba3ff;
+  --blue-dim: rgba(91, 163, 255, 0.08);
+  --blue-border: rgba(91, 163, 255, 0.2);
+  --orange: #ffaa44;
+  --orange-dim: rgba(255, 170, 68, 0.12);
+  --orange-border: rgba(255, 170, 68, 0.18);
+  --purple: #c4a3ff;
+  --purple-dim: rgba(180, 130, 255, 0.15);
+  --purple-border: rgba(180, 130, 255, 0.3);
+  --border-default: rgba(255, 255, 255, 0.06);
+}
+
+/* ─── BASE ─── */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ─── TIPOGRAFÍA UTILIDADES ─── */
+.font-display {
+  font-family: "Bebas Neue", "Arial Narrow", sans-serif;
+}
+
+/* ─── SCROLLBAR ─── */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--card-light);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #333;
+}

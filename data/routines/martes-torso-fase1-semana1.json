@@ -1,0 +1,189 @@
+{
+  "id": "martes-torso-fase1-semana1",
+  "title": "MARTES · DÍA 1",
+  "date": "2026-02-04",
+  "focus": "Torso completo · Empuje + Tirón",
+  "phase": "Fase 1 - Adaptación",
+  "week": 1,
+  "summary": {
+    "cardio": "7 min",
+    "warmup": "5 min",
+    "training": "28 min",
+    "stretch": "5 min"
+  },
+  "blocks": [
+    {
+      "type": "cardio",
+      "title": "Trote al gimnasio",
+      "description": "Ritmo suave, no te agotas. Cuando llegues ya deberías estar sudando un poco pero sin estar resoplando.",
+      "duration": "7 min",
+      "items": []
+    },
+    {
+      "type": "warmup",
+      "title": "Preparación muscular",
+      "duration": "5 min",
+      "items": [
+        { "text": "Movilidad de hombros: círculos hacia adelante y atrás, 10 reps cada dirección" },
+        { "text": "Cruces de brazos: estira uno contra el otro, 10 segundos cada lado" },
+        { "text": "Fondos en pared: espalda pegada a la pared, baja y sube · 2 series x 10 reps" },
+        { "text": "Remo con banda elástica (o sin peso): simula el tirón · 2 series x 12 reps" }
+      ]
+    },
+    {
+      "type": "stretch",
+      "title": "Recuperación",
+      "duration": "5 min",
+      "items": [
+        { "bold": "Pectoral:", "text": "Apoya un brazo en la pared a la altura del hombro, gira el cuerpo hasta sentir el tirón en el pectoral. 25 segundos por lado." },
+        { "bold": "Dorsal:", "text": "De rodillas, extiende los brazos hacia adelante y baja el pecho al suelo. 30 segundos." },
+        { "bold": "Hombro:", "text": "Lleva un brazo cruzado delante del cuerpo, con el otro estira suavemente. 25 segundos por lado." },
+        { "bold": "Tríceps:", "text": "Sube un brazo y dóblalo por detrás de la cabeza, con la otra mano tira suavemente. 25 segundos por lado." }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "id": "press-banca",
+      "name": "Press de Banca con Barra",
+      "order": 1,
+      "type": "principal",
+      "series": 3,
+      "reps": "10-12",
+      "rest": "90s",
+      "weight": "ligero",
+      "steps": [
+        { "text": "Túmbate en el banco con los ojos justo debajo de la barra. Pies firmes en el suelo, separados ancho de hombros." },
+        { "text": "Retrae los hombros: imagina que intentas meter las escápulas en el banco. Crea un pequeño arco natural en la espalda baja." },
+        { "text": "Agarra la barra con las manos un poco más ancho que los hombros. Desenchufa la barra del soporte con los brazos extendidos." },
+        { "text": "Baja la barra de forma controlada hasta que toque tu pecho, a la línea de los pezones. No la dejes caer." },
+        { "text": "Empuja hacia arriba hasta que los brazos estén casi extendidos (no bloquees los codos). Exhala al subir." }
+      ],
+      "tip": "Llevas 2 años parado. Empieza con 40-50kg máximo. Es mejor quedarte corto que forzar la técnica. La semana que viene sube si te ha ido bien."
+    },
+    {
+      "id": "remo-polea-baja",
+      "name": "Remo en Polea Baja (Seated Row)",
+      "order": 2,
+      "type": "principal",
+      "series": 3,
+      "reps": "10-12",
+      "rest": "90s",
+      "steps": [
+        { "text": "Siéntate en la máquina con los pies en el apoyo, rodillas ligeramente flexionadas. Agarra el handle con ambas manos." },
+        { "text": "Pecho alto y espalda recta, no te encoges. Esto es clave para no cargar las lumbares." },
+        { "text": "Tira del handle hacia tu abdomen, llevando los codos hacia atrás y apretando la espalda media (dorsales). Exhala al tirar." },
+        { "text": "Vuelve a la posición inicial de forma controlada, sintiendo la estiramiento en la espalda. No dejes caer el peso." }
+      ],
+      "tip": "El movimiento viene de la espalda, no de los brazos. Imagina que te estás arrastrando hacia la máquina con la espalda."
+    },
+    {
+      "id": "press-hombros",
+      "name": "Press de Hombros con Mancuernas",
+      "order": 3,
+      "type": "secundario",
+      "series": 3,
+      "reps": "10-12",
+      "rest": "90s",
+      "steps": [
+        { "text": "Siéntate en un banco con respaldo vertical. Apoya bien la espalda contra el respaldo, esto protege las lumbares." },
+        { "text": "Sostén una mancuerna en cada mano a la altura de los hombros, con los codos a 90 grados y las palmas mirando hacia adelante." },
+        { "text": "Empuja las mancuernas hacia arriba hasta que casi se toquen por encima de tu cabeza. Exhala al subir." },
+        { "text": "Baja de vuelta a la altura de los hombros de forma controlada, sin que los codos caigan por debajo de la línea del hombro." }
+      ],
+      "alert": "Apoya la espalda contra el respaldo siempre. Si no tienes banco con respaldo, hazlo de pie pero con mucho cuidado de la postura."
+    },
+    {
+      "id": "jalones-pecho",
+      "name": "Jalones al Pecho en Polea",
+      "order": 4,
+      "type": "secundario",
+      "series": 3,
+      "reps": "12",
+      "rest": "75s",
+      "steps": [
+        { "text": "Siéntate en la máquina de jalones, mete las piernas bajo las barras de apoyo. Agarra la barra con un agarre un poco más ancho que los hombros." },
+        { "text": "Inclínate ligeramente hacia atrás (10-15 grados). Pecho alto." },
+        { "text": "Tira la barra hacia abajo hasta la línea de las clavículas, llevando los codos hacia abajo y hacia atrás. Aprieta los dorsales en ese punto." },
+        { "text": "Vuelve arriba de forma controlada, sintiendo el estiramiento en la espalda. No dejes que la barra suba de golpe." }
+      ],
+      "tip": "No lleves la barra por detrás de la nuca. Siempre por delante, a las clavículas. Es más seguro y más efectivo."
+    },
+    {
+      "id": "fondos",
+      "name": "Fondos en Banco (o Paralelas)",
+      "order": 5,
+      "type": "secundario",
+      "series": 2,
+      "reps": "8-12",
+      "rest": "90s",
+      "steps": [
+        { "text": "Si es en banco: siéntate en el borde, manos apoyadas al lado de las caderas con los dedos apuntando hacia ti." },
+        { "text": "Saca las caderas del banco y baja controladamente flexionando los codos hasta que lleguen a 90 grados." },
+        { "text": "Si es en paralelas: agarra las barras, el cuerpo ligeramente inclinado hacia delante y baja." },
+        { "text": "Empuja hacia arriba volviendo a la posición inicial. No bloquees los codos arriba." }
+      ],
+      "tip": "Si no puedes con el propio peso, usa la máquina asistida de fondos. No te importa: la consistencia vale más que el ego."
+    },
+    {
+      "id": "curl-biceps",
+      "name": "Curl de Bíceps con Barra",
+      "order": 6,
+      "type": "secundario",
+      "series": 2,
+      "reps": "12",
+      "rest": "60s",
+      "steps": [
+        { "text": "De pie, agarra la barra con palmas hacia arriba, brazos extendidos delante de ti, separados ancho de hombros." },
+        { "text": "Sube la barra flexionando los codos, sin mover los codos de su posición. Solo los antebrazos se mueven." },
+        { "text": "Sube hasta que los bíceps estén bien contraídos (la barra llega a cerca del pecho)." },
+        { "text": "Baja de vuelta despacio, sintiendo la tensión. No dejes caer la barra." }
+      ]
+    },
+    {
+      "id": "extension-triceps",
+      "name": "Extensiones de Tríceps en Polea",
+      "order": 7,
+      "type": "secundario",
+      "series": 2,
+      "reps": "12",
+      "rest": "60s",
+      "steps": [
+        { "text": "De pie de cara a la máquina de polea alta. Agarra el handle con ambas manos a la altura del pecho." },
+        { "text": "Inclínate un poco hacia delante, codos pegados al cuerpo y fijos." },
+        { "text": "Extiende los brazos hacia abajo hasta que estén casi rectos, apretando los tríceps." },
+        { "text": "Vuelve a la posición inicial de forma controlada. Solo los antebrazos se mueven." }
+      ]
+    },
+    {
+      "id": "plancha",
+      "name": "Plancha Abdominal",
+      "order": 8,
+      "type": "core",
+      "series": 2,
+      "reps": "20-30s",
+      "rest": "30s",
+      "steps": [
+        { "text": "Apóyate en los antebrazos y las puntas de los pies. El cuerpo forma una línea recta de cabeza a talones." },
+        { "text": "Aprieta el abdomen como si alguien fuera a darte un puñetazo. Glúteos apretados también." },
+        { "text": "No dejes caer las caderas ni las suba. Mantén la posición el tiempo indicado." }
+      ]
+    },
+    {
+      "id": "dead-bug",
+      "name": "Dead Bug",
+      "order": 9,
+      "type": "core",
+      "series": 2,
+      "reps": "8 por lado",
+      "rest": "30s",
+      "steps": [
+        { "text": "Tumbado boca arriba. Rodillas flexionadas a 90 grados, pies en el aire. Brazos extendidos hacia el techo." },
+        { "text": "Aprieta la espalda baja contra el suelo (como si intentases aplanarla contra el suelo). Esto es fundamental." },
+        { "text": "Extiende simultáneamente el brazo derecho (hacia arriba, por encima de tu cabeza) y la pierna izquierda (hacia abajo, cerca del suelo). Sin perder el contacto de la espalda con el suelo." },
+        { "text": "Vuelve al centro y repite con el otro lado. Un lado = una rep." }
+      ],
+      "alert": "Este ejercicio es clave para tus lumbares. Si sientes que la espalda baja se levanta del suelo, no estiras tanto la pierna."
+    }
+  ]
+}

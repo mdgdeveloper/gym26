@@ -1,65 +1,88 @@
-import Image from "next/image";
+import { getAllRoutines } from "@/data";
+import RoutineCard from "@/components/RoutineCard";
+import BottomNav from "@/components/BottomNav";
 
-export default function Home() {
+export default function HomePage() {
+  const routines = getAllRoutines();
+
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
+    <div style={{ padding: "24px 16px 100px" }}>
+      {/* ─── HEADER ─── */}
+      <div style={{ textAlign: "center", marginBottom: "28px", position: "relative" }}>
+        <h1
+          style={{
+            fontFamily: "Bebas Neue, Arial Narrow, sans-serif",
+            fontSize: "36px",
+            letterSpacing: "3px",
+            color: "var(--accent)",
+            lineHeight: 1,
+          }}
+        >
+          FITNESS TRACKER
+        </h1>
+        <p style={{ fontSize: "13px", color: "var(--text-dim)", marginTop: "6px", fontWeight: 300 }}>
+          Fase 1 · Adaptación
+        </p>
+        <div
+          style={{
+            width: "50px",
+            height: "3px",
+            background: "var(--accent)",
+            borderRadius: "2px",
+            margin: "12px auto 0",
+          }}
         />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+      </div>
+
+      {/* ─── STATS RÁPIDAS ─── */}
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          gap: "24px",
+          background: "var(--card)",
+          border: "1px solid var(--border-default)",
+          borderRadius: "14px",
+          padding: "16px",
+          marginBottom: "28px",
+        }}
+      >
+        <div style={{ textAlign: "center" }}>
+          <div style={{ fontFamily: "Bebas Neue, sans-serif", fontSize: "26px", color: "var(--accent)", lineHeight: 1 }}>
+            {routines.length}
+          </div>
+          <div style={{ fontSize: "10px", color: "var(--text-dim)", letterSpacing: "1px", textTransform: "uppercase", marginTop: "3px" }}>
+            Rutinas
+          </div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+        <div style={{ width: "1px", background: "var(--card-light)" }} />
+        <div style={{ textAlign: "center" }}>
+          <div style={{ fontFamily: "Bebas Neue, sans-serif", fontSize: "26px", color: "var(--accent)", lineHeight: 1 }}>
+            1
+          </div>
+          <div style={{ fontSize: "10px", color: "var(--text-dim)", letterSpacing: "1px", textTransform: "uppercase", marginTop: "3px" }}>
+            Semana
+          </div>
         </div>
-      </main>
+        <div style={{ width: "1px", background: "var(--card-light)" }} />
+        <div style={{ textAlign: "center" }}>
+          <div style={{ fontFamily: "Bebas Neue, sans-serif", fontSize: "26px", color: "var(--accent)", lineHeight: 1 }}>
+            3
+          </div>
+          <div style={{ fontSize: "10px", color: "var(--text-dim)", letterSpacing: "1px", textTransform: "uppercase", marginTop: "3px" }}>
+            Días/sem
+          </div>
+        </div>
+      </div>
+
+      {/* ─── LISTA DE RUTINAS ─── */}
+      <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
+        {routines.map((routine) => (
+          <RoutineCard key={routine.id} routine={routine} />
+        ))}
+      </div>
+
+      <BottomNav />
     </div>
   );
 }

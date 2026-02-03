@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rutina Martes - Torso</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg: #0f1117;
+            --card: #1a1d27;
+            --card-light: #222633;
+            --accent: #e8ff41;
+            --accent-dim: rgba(232, 255, 65, 0.12);
+            --text: #e8eaed;
+            --text-dim: #8a8f9e;
+            --red: #ff5555;
+            --blue: #5ba3ff;
+            --orange: #ffaa44;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            min-height: 100vh;
+            padding: 24px 16px;
+        }
+
+        /* ─── HEADER ─── */
+        .header {
+            text-align: center;
+            margin-bottom: 24px;
+            position: relative;
+        }
+
+        .header::after {
+            content: '';
+            position: absolute;
+            bottom: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 3px;
+            background: var(--accent);
+            border-radius: 2px;
+        }
+
+        .header .dia {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 38px;
+            letter-spacing: 3px;
+            color: var(--accent);
+            line-height: 1;
+        }
+
+        .header .fecha {
+            font-size: 13px;
+            color: var(--text-dim);
+            margin-top: 4px;
+            font-weight: 300;
+        }
+
+        .header .focus {
+            display: inline-block;
+            margin-top: 10px;
+            background: var(--accent-dim);
+            border: 1px solid rgba(232, 255, 65, 0.25);
+            color: var(--accent);
+            padding: 4px 14px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+        }
+
+        /* ─── PHASE LABELS ─── */
+        .phase-label {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin: 28px 0 10px;
+        }
+
+        .phase-label .line {
+            flex: 1;
+            height: 1px;
+            background: var(--card-light);
+        }
+
+        .phase-label .tag {
+            font-size: 10px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--text-dim);
+            white-space: nowrap;
+        }
+
+        /* ─── CARDIO BLOCK ─── */
+        .cardio-block {
+            background: linear-gradient(135deg, #1a2a1a 0%, #1a1d27 100%);
+            border: 1px solid rgba(91, 163, 255, 0.2);
+            border-radius: 14px;
+            padding: 18px;
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .cardio-icon {
+            width: 52px;
+            height: 52px;
+            border-radius: 14px;
+            background: rgba(91, 163, 255, 0.12);
+            border: 1px solid rgba(91, 163, 255, 0.25);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            flex-shrink: 0;
+        }
+
+        .cardio-info .cardio-title {
+            font-weight: 600;
+            font-size: 15px;
+            color: var(--blue);
+        }
+
+        .cardio-info .cardio-desc {
+            font-size: 13px;
+            color: var(--text-dim);
+            margin-top: 2px;
+            font-weight: 300;
+        }
+
+        /* ─── CALENTAMIENTO ─── */
+        .warmup-block {
+            background: var(--card);
+            border: 1px solid rgba(255, 170, 68, 0.18);
+            border-radius: 14px;
+            padding: 16px 18px;
+        }
+
+        .warmup-title {
+            font-size: 12px;
+            font-weight: 600;
+            color: var(--orange);
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .warmup-list {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .warmup-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 13px;
+            color: var(--text-dim);
+        }
+
+        .warmup-item .dot {
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: var(--orange);
+            flex-shrink: 0;
+        }
+
+        /* ─── EXERCISE CARDS ─── */
+        .exercise-card {
+            background: var(--card);
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            border-radius: 14px;
+            overflow: hidden;
+            margin-bottom: 10px;
+            transition: border-color 0.2s;
+        }
+
+        .exercise-card:active {
+            border-color: rgba(232, 255, 65, 0.3);
+        }
+
+        .exercise-header {
+            display: flex;
+            align-items: center;
+            padding: 14px 16px;
+            gap: 12px;
+            cursor: pointer;
+        }
+
+        .exercise-num {
+            width: 34px;
+            height: 34px;
+            border-radius: 10px;
+            background: var(--accent-dim);
+            border: 1px solid rgba(232, 255, 65, 0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 18px;
+            color: var(--accent);
+            flex-shrink: 0;
+        }
+
+        .exercise-num.principal {
+            background: rgba(232, 255, 65, 0.18);
+            border-color: rgba(232, 255, 65, 0.4);
+        }
+
+        .exercise-name {
+            font-weight: 600;
+            font-size: 15px;
+            flex: 1;
+        }
+
+        .exercise-config {
+            display: flex;
+            gap: 8px;
+        }
+
+        .config-pill {
+            background: var(--card-light);
+            border-radius: 6px;
+            padding: 4px 9px;
+            font-size: 12px;
+            font-weight: 500;
+            color: var(--text-dim);
+            white-space: nowrap;
+        }
+
+        .config-pill .val {
+            color: var(--text);
+            font-weight: 600;
+        }
+
+        /* ─── DETAIL PANEL ─── */
+        .detail-panel {
+            display: none;
+            padding: 0 16px 16px;
+            border-top: 1px solid rgba(255, 255, 255, 0.06);
+        }
+
+        .detail-panel.open {
+            display: block;
+        }
+
+        .detail-section {
+            margin-top: 14px;
+        }
+
+        .detail-section .label {
+            font-size: 10px;
+            font-weight: 600;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            color: var(--text-dim);
+            margin-bottom: 6px;
+        }
+
+        .detail-section p {
+            font-size: 13px;
+            color: var(--text);
+            line-height: 1.5;
+            font-weight: 300;
+        }
+
+        .steps {
+            list-style: none;
+            counter-reset: steps;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .steps li {
+            counter-increment: steps;
+            display: flex;
+            gap: 10px;
+            font-size: 13px;
+            line-height: 1.45;
+            color: var(--text);
+            font-weight: 300;
+        }
+
+        .steps li::before {
+            content: counter(steps);
+            background: var(--card-light);
+            color: var(--accent);
+            width: 22px;
+            height: 22px;
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 11px;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+
+        .alert-box {
+            margin-top: 10px;
+            background: rgba(255, 85, 85, 0.1);
+            border: 1px solid rgba(255, 85, 85, 0.25);
+            border-radius: 8px;
+            padding: 10px 12px;
+            font-size: 12px;
+            color: #ff8a8a;
+            display: flex;
+            align-items: flex-start;
+            gap: 8px;
+        }
+
+        .alert-box .icon {
+            flex-shrink: 0;
+        }
+
+        .tip-box {
+            margin-top: 10px;
+            background: rgba(91, 163, 255, 0.08);
+            border: 1px solid rgba(91, 163, 255, 0.2);
+            border-radius: 8px;
+            padding: 10px 12px;
+            font-size: 12px;
+            color: #8fc5ff;
+            display: flex;
+            align-items: flex-start;
+            gap: 8px;
+        }
+
+        .tip-box .icon {
+            flex-shrink: 0;
+        }
+
+        /* ─── CORE BLOCK ─── */
+        .core-block {
+            background: linear-gradient(135deg, #1d1a2a 0%, #1a1d27 100%);
+            border: 1px solid rgba(232, 255, 65, 0.15);
+            border-radius: 14px;
+            overflow: hidden;
+            margin-bottom: 10px;
+        }
+
+        .core-block .exercise-num {
+            background: rgba(180, 130, 255, 0.15);
+            border-color: rgba(180, 130, 255, 0.3);
+            color: #c4a3ff;
+        }
+
+        /* ─── STRETCH BLOCK ─── */
+        .stretch-block {
+            background: linear-gradient(135deg, #1a1d2a 0%, #1a1d27 100%);
+            border: 1px solid rgba(255, 170, 68, 0.15);
+            border-radius: 14px;
+            padding: 16px 18px;
+        }
+
+        .stretch-title {
+            font-size: 12px;
+            font-weight: 600;
+            color: var(--orange);
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .stretch-list {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .stretch-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 13px;
+            color: var(--text-dim);
+        }
+
+        .stretch-item .dot {
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: var(--orange);
+            flex-shrink: 0;
+        }
+
+        /* ─── SUMMARY BAR ─── */
+        .summary-bar {
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+            background: var(--card);
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            border-radius: 14px;
+            padding: 16px;
+            margin-top: 24px;
+        }
+
+        .summary-item {
+            text-align: center;
+        }
+
+        .summary-item .val {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 26px;
+            color: var(--accent);
+            line-height: 1;
+        }
+
+        .summary-item .lbl {
+            font-size: 10px;
+            color: var(--text-dim);
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-top: 3px;
+        }
+
+        .summary-divider {
+            width: 1px;
+            background: var(--card-light);
+        }
+
+        /* ─── TOGGLE ARROW ─── */
+        .arrow {
+            font-size: 14px;
+            color: var(--text-dim);
+            transition: transform 0.2s;
+            flex-shrink: 0;
+        }
+
+        .exercise-card.open .arrow {
+            transform: rotate(180deg);
+        }
+
+        /* ─── CHECKBOX ─── */
+        .check {
+            width: 22px;
+            height: 22px;
+            border-radius: 6px;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            flex-shrink: 0;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.2s;
+        }
+
+        .check:hover {
+            border-color: var(--accent);
+        }
+
+        .check.done {
+            background: var(--accent);
+            border-color: var(--accent);
+        }
+
+        .check.done::after {
+            content: '✓';
+            color: #000;
+            font-weight: 700;
+            font-size: 13px;
+        }
+
+        .exercise-card.done .exercise-name {
+            text-decoration: line-through;
+            color: var(--text-dim);
+        }
+
+        .exercise-card.done .config-pill .val {
+            color: var(--text-dim);
+        }
+
+        /* ─── RESPONSIVE ─── */
+        @media (min-width: 500px) {
+            body {
+                max-width: 480px;
+                margin: 0 auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <div class="header">
+        <div class="dia">MARTES · DÍA 1</div>
+        <div class="fecha">3 de Febrero · 2026</div>
+        <div class="focus">Torso completo · Empuje + Tirón</div>
+    </div>
+
+    <!-- RESUMEN -->
+    <div class="summary-bar">
+        <div class="summary-item">
+            <div class="val">7'</div>
+            <div class="lbl">Cardio (trote)</div>
+        </div>
+        <div class="summary-divider"></div>
+        <div class="summary-item">
+            <div class="val">5'</div>
+            <div class="lbl">Calentamiento</div>
+        </div>
+        <div class="summary-divider"></div>
+        <div class="summary-item">
+            <div class="val">28'</div>
+            <div class="lbl">Entrenamiento</div>
+        </div>
+        <div class="summary-divider"></div>
+        <div class="summary-item">
+            <div class="val">5'</div>
+            <div class="lbl">Estiramientos</div>
+        </div>
+    </div>
+
+    <!-- CARDIO -->
+    <div class="phase-label">
+        <div class="line"></div>
+        <div class="tag">Antes de llegar</div>
+        <div class="line"></div>
+    </div>
+
+    <div class="cardio-block">
+        <div class="cardio-icon">🏃</div>
+        <div class="cardio-info">
+            <div class="cardio-title">Trote al gimnasio · 7 minutos</div>
+            <div class="cardio-desc">Ritmo suave, no te agotas. Cuando llegues ya deberías estar sudando un poco pero
+                sin estar resoplando.</div>
+        </div>
+    </div>
+
+    <!-- CALENTAMIENTO -->
+    <div class="phase-label">
+        <div class="line"></div>
+        <div class="tag">Calentamiento · 5 min</div>
+        <div class="line"></div>
+    </div>
+
+    <div class="warmup-block">
+        <div class="warmup-title">🔥 Preparación muscular</div>
+        <div class="warmup-list">
+            <div class="warmup-item">
+                <div class="dot"></div>
+                <span>Movilidad de hombros: círculos hacia adelante y atrás, 10 reps cada dirección</span>
+            </div>
+            <div class="warmup-item">
+                <div class="dot"></div>
+                <span>Cruces de brazos: estira uno contra el otro, 10 segundos cada lado</span>
+            </div>
+            <div class="warmup-item">
+                <div class="dot"></div>
+                <span>Fondos en pared: espalda pegada a la pared, baja y sube · 2 series x 10 reps</span>
+            </div>
+            <div class="warmup-item">
+                <div class="dot"></div>
+                <span>Remo con banda elástica (o sin peso): simula el tirón · 2 series x 12 reps</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- ENTRENAMIENTO PRINCIPAL -->
+    <div class="phase-label">
+        <div class="line"></div>
+        <div class="tag">Entrenamiento principal · 28 min</div>
+        <div class="line"></div>
+    </div>
+
+    <!-- 1. Press de Banca -->
+    <div class="exercise-card" onclick="toggleCard(this)">
+        <div class="exercise-header">
+            <div class="check" onclick="event.stopPropagation(); toggleCheck(this)"></div>
+            <div class="exercise-num principal">1</div>
+            <div style="flex:1">
+                <div class="exercise-name">Press de Banca con Barra</div>
+            </div>
+            <div class="arrow">▼</div>
+        </div>
+        <div class="exercise-config" style="padding: 0 16px 12px; flex-wrap: wrap; display:flex; gap:8px;">
+            <div class="config-pill">Series <span class="val">3</span></div>
+            <div class="config-pill">Reps <span class="val">10-12</span></div>
+            <div class="config-pill">Descanso <span class="val">90s</span></div>
+            <div class="config-pill">Peso <span class="val">ligero</span></div>
+        </div>
+        <div class="detail-panel">
+            <div class="detail-section">
+                <div class="label">Cómo hacerlo paso a paso</div>
+                <ol class="steps">
+                    <li>Túmbate en el banco con los ojos justo debajo de la barra. Pies firmes en el suelo, separados
+                        ancho de hombros.</li>
+                    <li>Retrae los hombros: imagina que intentas meter las escápulas en el banco. Crea un pequeño arco
+                        natural en la espalda baja.</li>
+                    <li>Agarra la barra con las manos un poco más ancho que los hombros. Desenchufa la barra del soporte
+                        con los brazos extendidos.</li>
+                    <li>Baja la barra de forma controlada hasta que toque tu pecho, a la línea de los pezones. No la
+                        dejes caer.</li>
+                    <li>Empuja hacia arriba hasta que los brazos estén casi extendidos (no bloquees los codos). Exhala
+                        al subir.</li>
+                </ol>
+            </div>
+            <div class="tip-box">
+                <span class="icon">💡</span>
+                <span>Llevas 2 años parado. Empieza con <strong>40-50kg máximo</strong>. Es mejor quedarte corto que
+                    forzar la técnica. La semana que viene sube si te ha ido bien.</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. Remo en Polea Baja -->
+    <div class="exercise-card" onclick="toggleCard(this)">
+        <div class="exercise-header">
+            <div class="check" onclick="event.stopPropagation(); toggleCheck(this)"></div>
+            <div class="exercise-num principal">2</div>
+            <div style="flex:1">
+                <div class="exercise-name">Remo en Polea Baja (Seated Row)</div>
+            </div>
+            <div class="arrow">▼</div>
+        </div>
+        <div class="exercise-config" style="padding: 0 16px 12px; flex-wrap: wrap; display:flex; gap:8px;">
+            <div class="config-pill">Series <span class="val">3</span></div>
+            <div class="config-pill">Reps <span class="val">10-12</span></div>
+            <div class="config-pill">Descanso <span class="val">90s</span></div>
+        </div>
+        <div class="detail-panel">
+            <div class="detail-section">
+                <div class="label">Cómo hacerlo paso a paso</div>
+                <ol class="steps">
+                    <li>Siéntate en la máquina con los pies en el apoyo, rodillas ligeramente flexionadas. Agarra el
+                        handle con ambas manos.</li>
+                    <li>Pecho alto y espalda recta, no te encoges. Esto es clave para no cargar las lumbares.</li>
+                    <li>Tira del handle hacia tu abdomen, llevando los codos hacia atrás y apretando la espalda media
+                        (dorsales). Exhala al tirar.</li>
+                    <li>Vuelve a la posición inicial de forma controlada, sintiendo la estiramiento en la espalda. No
+                        dejes caer el peso.</li>
+                </ol>
+            </div>
+            <div class="tip-box">
+                <span class="icon">💡</span>
+                <span>El movimiento viene de la espalda, no de los brazos. Imagina que te estás arrastrando hacia la
+                    máquina con la espalda.</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- 3. Press de Hombros -->
+    <div class="exercise-card" onclick="toggleCard(this)">
+        <div class="exercise-header">
+            <div class="check" onclick="event.stopPropagation(); toggleCheck(this)"></div>
+            <div class="exercise-num">3</div>
+            <div style="flex:1">
+                <div class="exercise-name">Press de Hombros con Mancuernas</div>
+            </div>
+            <div class="arrow">▼</div>
+        </div>
+        <div class="exercise-config" style="padding: 0 16px 12px; flex-wrap: wrap; display:flex; gap:8px;">
+            <div class="config-pill">Series <span class="val">3</span></div>
+            <div class="config-pill">Reps <span class="val">10-12</span></div>
+            <div class="config-pill">Descanso <span class="val">90s</span></div>
+        </div>
+        <div class="detail-panel">
+            <div class="detail-section">
+                <div class="label">Cómo hacerlo paso a paso</div>
+                <ol class="steps">
+                    <li>Siéntate en un banco con respaldo vertical. Apoya bien la espalda contra el respaldo, esto
+                        protege las lumbares.</li>
+                    <li>Sostén una mancuerna en cada mano a la altura de los hombros, con los codos a 90 grados y las
+                        palmas mirando hacia adelante.</li>
+                    <li>Empuja las mancuernas hacia arriba hasta que casi se toquen por encima de tu cabeza. Exhala al
+                        subir.</li>
+                    <li>Baja de vuelta a la altura de los hombros de forma controlada, sin que los codos caigan por
+                        debajo de la línea del hombro.</li>
+                </ol>
+            </div>
+            <div class="alert-box">
+                <span class="icon">⚠️</span>
+                <span>Apoya la espalda contra el respaldo siempre. Si no tienes banco con respaldo, hazlo de pie pero
+                    con mucho cuidado de la postura.</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- 4. Jalones -->
+    <div class="exercise-card" onclick="toggleCard(this)">
+        <div class="exercise-header">
+            <div class="check" onclick="event.stopPropagation(); toggleCheck(this)"></div>
+            <div class="exercise-num">4</div>
+            <div style="flex:1">
+                <div class="exercise-name">Jalones al Pecho en Polea</div>
+            </div>
+            <div class="arrow">▼</div>
+        </div>
+        <div class="exercise-config" style="padding: 0 16px 12px; flex-wrap: wrap; display:flex; gap:8px;">
+            <div class="config-pill">Series <span class="val">3</span></div>
+            <div class="config-pill">Reps <span class="val">12</span></div>
+            <div class="config-pill">Descanso <span class="val">75s</span></div>
+        </div>
+        <div class="detail-panel">
+            <div class="detail-section">
+                <div class="label">Cómo hacerlo paso a paso</div>
+                <ol class="steps">
+                    <li>Siéntate en la máquina de jalones, mete las piernas bajo las barras de apoyo. Agarra la barra
+                        con un agarre un poco más ancho que los hombros.</li>
+                    <li>Inclínate ligeramente hacia atrás (10-15 grados). Pecho alto.</li>
+                    <li>Tira la barra hacia abajo hasta la línea de las clavículas, llevando los codos hacia abajo y
+                        hacia atrás. Aprieta los dorsales en ese punto.</li>
+                    <li>Vuelve arriba de forma controlada, sintiendo el estiramiento en la espalda. No dejes que la
+                        barra suba de golpe.</li>
+                </ol>
+            </div>
+            <div class="tip-box">
+                <span class="icon">💡</span>
+                <span>No lleves la barra por detrás de la nuca. Siempre por delante, a las clavículas. Es más seguro y
+                    más efectivo.</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- 5. Fondos -->
+    <div class="exercise-card" onclick="toggleCard(this)">
+        <div class="exercise-header">
+            <div class="check" onclick="event.stopPropagation(); toggleCheck(this)"></div>
+            <div class="exercise-num">5</div>
+            <div style="flex:1">
+                <div class="exercise-name">Fondos en Banco (o Paralelas)</div>
+            </div>
+            <div class="arrow">▼</div>
+        </div>
+        <div class="exercise-config" style="padding: 0 16px 12px; flex-wrap: wrap; display:flex; gap:8px;">
+            <div class="config-pill">Series <span class="val">2</span></div>
+            <div class="config-pill">Reps <span class="val">8-12</span></div>
+            <div class="config-pill">Descanso <span class="val">90s</span></div>
+        </div>
+        <div class="detail-panel">
+            <div class="detail-section">
+                <div class="label">Cómo hacerlo paso a paso</div>
+                <ol class="steps">
+                    <li>Si es en banco: siéntate en el borde, manos apoyadas al lado de las caderas con los dedos
+                        apuntando hacia ti.</li>
+                    <li>Saca las caderas del banco y baja controladamente flexionando los codos hasta que lleguen a 90
+                        grados.</li>
+                    <li>Si es en paralelas: agarra las barras, el cuerpo ligeramente inclinado hacia delante y baja.
+                    </li>
+                    <li>Empuja hacia arriba volviendo a la posición inicial. No bloquees los codos arriba.</li>
+                </ol>
+            </div>
+            <div class="tip-box">
+                <span class="icon">💡</span>
+                <span>Si no puedes con el propio peso, usa la máquina asistida de fondos. No te importa: la consistencia
+                    vale más que el ego.</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- 6. Curl bíceps -->
+    <div class="exercise-card" onclick="toggleCard(this)">
+        <div class="exercise-header">
+            <div class="check" onclick="event.stopPropagation(); toggleCheck(this)"></div>
+            <div class="exercise-num">6</div>
+            <div style="flex:1">
+                <div class="exercise-name">Curl de Bíceps con Barra</div>
+            </div>
+            <div class="arrow">▼</div>
+        </div>
+        <div class="exercise-config" style="padding: 0 16px 12px; flex-wrap: wrap; display:flex; gap:8px;">
+            <div class="config-pill">Series <span class="val">2</span></div>
+            <div class="config-pill">Reps <span class="val">12</span></div>
+            <div class="config-pill">Descanso <span class="val">60s</span></div>
+        </div>
+        <div class="detail-panel">
+            <div class="detail-section">
+                <div class="label">Cómo hacerlo paso a paso</div>
+                <ol class="steps">
+                    <li>De pie, agarra la barra con palmas hacia arriba, brazos extendidos delante de ti, separados
+                        ancho de hombros.</li>
+                    <li>Sube la barra flexionando los codos, sin mover los codos de su posición. Solo los antebrazos se
+                        mueven.</li>
+                    <li>Sube hasta que los bíceps estén bien contraídos (la barra llega a cerca del pecho).</li>
+                    <li>Baja de vuelta despacio, sintiendo la tensión. No dejes caer la barra.</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <!-- 7. Tríceps -->
+    <div class="exercise-card" onclick="toggleCard(this)">
+        <div class="exercise-header">
+            <div class="check" onclick="event.stopPropagation(); toggleCheck(this)"></div>
+            <div class="exercise-num">7</div>
+            <div style="flex:1">
+                <div class="exercise-name">Extensiones de Tríceps en Polea</div>
+            </div>
+            <div class="arrow">▼</div>
+        </div>
+        <div class="exercise-config" style="padding: 0 16px 12px; flex-wrap: wrap; display:flex; gap:8px;">
+            <div class="config-pill">Series <span class="val">2</span></div>
+            <div class="config-pill">Reps <span class="val">12</span></div>
+            <div class="config-pill">Descanso <span class="val">60s</span></div>
+        </div>
+        <div class="detail-panel">
+            <div class="detail-section">
+                <div class="label">Cómo hacerlo paso a paso</div>
+                <ol class="steps">
+                    <li>De pie de cara a la máquina de polea alta. Agarra el handle con ambas manos a la altura del
+                        pecho.</li>
+                    <li>Inclínate un poco hacia delante, codos pegados al cuerpo y fijos.</li>
+                    <li>Extiende los brazos hacia abajo hasta que estén casi rectos, apretando los tríceps.</li>
+                    <li>Vuelve a la posición inicial de forma controlada. Solo los antebrazos se mueven.</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <!-- CORE -->
+    <div class="phase-label">
+        <div class="line"></div>
+        <div class="tag">Core · 3 min</div>
+        <div class="line"></div>
+    </div>
+
+    <div class="core-block">
+        <div class="exercise-header" onclick="toggleCard(this.parentElement)">
+            <div class="check" onclick="event.stopPropagation(); toggleCheck(this)"></div>
+            <div class="exercise-num"
+                style="background:rgba(180,130,255,0.15); border-color:rgba(180,130,255,0.3); color:#c4a3ff;">A</div>
+            <div style="flex:1">
+                <div class="exercise-name">Plancha Abdominal</div>
+            </div>
+            <div class="arrow">▼</div>
+        </div>
+        <div class="exercise-config" style="padding: 0 16px 12px; flex-wrap: wrap; display:flex; gap:8px;">
+            <div class="config-pill">Series <span class="val">2</span></div>
+            <div class="config-pill">Tiempo <span class="val">20-30s</span></div>
+            <div class="config-pill">Descanso <span class="val">30s</span></div>
+        </div>
+        <div class="detail-panel">
+            <div class="detail-section">
+                <div class="label">Cómo hacerlo</div>
+                <ol class="steps">
+                    <li>Apóyate en los antebrazos y las puntas de los pies. El cuerpo forma una línea recta de cabeza a
+                        talones.</li>
+                    <li>Aprieta el abdomen como si alguien fuera a darte un puñetazo. Glúteos apretados también.</li>
+                    <li>No dejes caer las caderas ni las suba. Mantén la posición el tiempo indicado.</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <div class="core-block">
+        <div class="exercise-header" onclick="toggleCard(this.parentElement)">
+            <div class="check" onclick="event.stopPropagation(); toggleCheck(this)"></div>
+            <div class="exercise-num"
+                style="background:rgba(180,130,255,0.15); border-color:rgba(180,130,255,0.3); color:#c4a3ff;">B</div>
+            <div style="flex:1">
+                <div class="exercise-name">Dead Bug</div>
+            </div>
+            <div class="arrow">▼</div>
+        </div>
+        <div class="exercise-config" style="padding: 0 16px 12px; flex-wrap: wrap; display:flex; gap:8px;">
+            <div class="config-pill">Series <span class="val">2</span></div>
+            <div class="config-pill">Reps <span class="val">8 por lado</span></div>
+            <div class="config-pill">Descanso <span class="val">30s</span></div>
+        </div>
+        <div class="detail-panel">
+            <div class="detail-section">
+                <div class="label">Cómo hacerlo</div>
+                <ol class="steps">
+                    <li>Tumbado boca arriba. Rodillas flexionadas a 90 grados, pies en el aire. Brazos extendidos hacia
+                        el techo.</li>
+                    <li>Aprieta la espalda baja contra el suelo (como si intentases aplanarla contra el suelo). Esto es
+                        fundamental.</li>
+                    <li>Extiende simultáneamente el brazo derecho (hacia arriba, por encima de tu cabeza) y la pierna
+                        izquierda (hacia abajo, cerca del suelo). Sin perder el contacto de la espalda con el suelo.
+                    </li>
+                    <li>Vuelve al centro y repite con el otro lado. Un lado = una rep.</li>
+                </ol>
+            </div>
+            <div class="alert-box">
+                <span class="icon">⚠️</span>
+                <span>Este ejercicio es <strong>clave para tus lumbares</strong>. Si sientes que la espalda baja se
+                    levanta del suelo, no estiras tanto la pierna.</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- ESTIRAMIENTO -->
+    <div class="phase-label">
+        <div class="line"></div>
+        <div class="tag">Estiramiento final · 5 min</div>
+        <div class="line"></div>
+    </div>
+
+    <div class="stretch-block">
+        <div class="stretch-title">🧘 Recuperación</div>
+        <div class="stretch-list">
+            <div class="stretch-item">
+                <div class="dot"></div>
+                <span><strong>Pectoral:</strong> Apoya un brazo en la pared a la altura del hombro, gira el cuerpo hasta
+                    sentir el tirón en el pectoral. 25 segundos por lado.</span>
+            </div>
+            <div class="stretch-item">
+                <div class="dot"></div>
+                <span><strong>Dorsal:</strong> De rodillas, extiende los brazos hacia adelante y baja el pecho al suelo.
+                    30 segundos.</span>
+            </div>
+            <div class="stretch-item">
+                <div class="dot"></div>
+                <span><strong>Hombro:</strong> Lleva un brazo cruzado delante del cuerpo, con el otro estira suavemente.
+                    25 segundos por lado.</span>
+            </div>
+            <div class="stretch-item">
+                <div class="dot"></div>
+                <span><strong>Tríceps:</strong> Sube un brazo y dóblalo por detrás de la cabeza, con la otra mano tira
+                    suavemente. 25 segundos por lado.</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- JS -->
+    <script>
+        function toggleCard(card) {
+            const panel = card.querySelector('.detail-panel');
+            const isOpen = panel.classList.contains('open');
+            // Cierra todos
+            document.querySelectorAll('.detail-panel.open').forEach(p => p.classList.remove('open'));
+            document.querySelectorAll('.exercise-card.open').forEach(c => c.classList.remove('open'));
+            // Abre este si estaba cerrado
+            if (!isOpen) {
+                panel.classList.add('open');
+                card.classList.add('open');
+            }
+        }
+
+        function toggleCheck(check) {
+            check.classList.toggle('done');
+            const card = check.closest('.exercise-card') || check.closest('.core-block');
+            if (check.classList.contains('done')) {
+                card.classList.add('done');
+            } else {
+                card.classList.remove('done');
+            }
+        }
+    </script>
+
+</body>
+
+</html>
