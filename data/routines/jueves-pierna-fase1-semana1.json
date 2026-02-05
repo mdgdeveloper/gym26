@@ -1,14 +1,14 @@
 {
-  "id": "jueves-pierna-fase1-semana1",
+  "id": "jueves-pierna-espalda-fase1-semana1",
   "title": "JUEVES · DÍA 2",
   "date": "2026-02-06",
-  "focus": "Pierna completa + Core · Protección lumbar",
+  "focus": "Pierna + Espalda · Adaptación muscular",
   "phase": "Fase 1 - Adaptación",
   "week": 1,
   "summary": {
     "cardio": "7 min",
     "warmup": "8 min",
-    "training": "32 min",
+    "training": "28 min",
     "stretch": "5 min"
   },
   "blocks": [
@@ -37,7 +37,7 @@
           "text": "Sentadillas sin peso: baja despacio, siente el movimiento · 2 series x 12 reps"
         },
         {
-          "text": "Peso muerto rumano sin peso: bisagra de cadera, espalda recta · 2 series x 10 reps"
+          "text": "Remo con banda o sin peso: activa la espalda · 2 series x 12 reps"
         },
         {
           "text": "Puentes de glúteo: tumbado boca arriba, sube la cadera apretando glúteos · 2 series x 15 reps"
@@ -46,24 +46,24 @@
     },
     {
       "type": "stretch",
-      "title": "Recuperación y protección lumbar",
+      "title": "Recuperación completa",
       "duration": "5 min",
       "items": [
         {
           "bold": "Cuádriceps:",
-          "text": "De pie, agarra el tobillo por detrás y llévalo hacia el glúteo. 30 segundos por lado."
+          "text": "De pie, agarra el tobillo por detrás y llévalo hacia el glúteo. 25 segundos por lado."
         },
         {
           "bold": "Isquiotibiales:",
           "text": "Sentado en el suelo, piernas extendidas, inclínate hacia adelante sin forzar. 30 segundos."
         },
         {
-          "bold": "Glúteos:",
-          "text": "Tumbado boca arriba, cruza un tobillo sobre la rodilla contraria y tira de la pierna hacia ti. 25 segundos por lado."
+          "bold": "Dorsales:",
+          "text": "De rodillas, extiende los brazos hacia adelante y baja el pecho al suelo. 30 segundos."
         },
         {
           "bold": "Lumbares (suave):",
-          "text": "De rodillas, siéntate sobre los talones y estira los brazos hacia adelante (postura del niño). 40 segundos."
+          "text": "De rodillas, siéntate sobre los talones y estira los brazos hacia adelante (postura del niño). 35 segundos."
         }
       ]
     }
@@ -77,7 +77,7 @@
       "series": 3,
       "reps": "10-12",
       "rest": "2 min",
-      "weight": "solo barra (20kg) o barra + 10kg",
+      "weight": "solo barra (20kg)",
       "steps": [
         {
           "text": "Coloca la barra en el rack a la altura de tus hombros. Métete debajo y apóyala en la parte alta de la espalda (trapecios), no en el cuello."
@@ -89,43 +89,43 @@
           "text": "Saca la barra del rack dando 2-3 pasos atrás. Respira hondo, aprieta el core como si alguien fuera a golpearte el abdomen."
         },
         {
-          "text": "Baja flexionando rodillas y caderas simultáneamente. Las rodillas van hacia adelante y ligeramente hacia afuera, siguiendo la línea de los pies. Baja hasta que los muslos estén paralelos al suelo."
+          "text": "Baja flexionando rodillas y caderas simultáneamente. Las rodillas van hacia adelante y ligeramente hacia afuera, siguiendo la línea de los pies. Baja hasta que los muslos estén paralelos al suelo (o un poco menos si sientes molestias)."
         },
         {
           "text": "Empuja con los talones para subir, manteniendo el pecho alto y la espalda recta. Exhala al subir. No dejes que las rodillas se vayan hacia dentro."
         }
       ],
-      "tip": "CRUCIAL: Empieza solo con la barra vacía (20kg). Tu prioridad hoy es aprender/recordar la técnica perfecta, no mover peso. Tus lumbares te lo agradecerán.",
-      "alert": "Si sientes cualquier molestia en la espalda baja, para inmediatamente. Revisa que el core esté apretado y la espalda neutra. Reducir profundidad si es necesario."
+      "tip": "Llevas 2 años parado. Hoy SOLO la barra vacía (20kg). Tu objetivo es dominar la técnica y sentir el movimiento, no mover peso. La semana que viene añades 5kg si te ha ido bien.",
+      "alert": "Si sientes cualquier molestia en la espalda baja, para inmediatamente. Revisa que el core esté apretado y la espalda neutra. Si persiste, reduce la profundidad o hazlas en máquina hack squat."
     },
     {
-      "id": "peso-muerto-rumano",
-      "name": "Peso Muerto Rumano con Barra",
+      "id": "remo-barra-pendlay",
+      "name": "Remo con Barra (Pendlay Row)",
       "order": 2,
       "type": "principal",
       "series": 3,
       "reps": "10-12",
-      "rest": "2 min",
-      "weight": "30-40kg total",
+      "rest": "90s",
+      "weight": "30-40kg",
       "steps": [
         {
-          "text": "De pie, agarra la barra con las manos separadas ancho de hombros, palmas hacia ti. Pies ancho de caderas."
+          "text": "Coloca la barra en el suelo con discos que permitan que esté a unos 20cm del suelo. Pies ancho de caderas."
         },
         {
-          "text": "Rodillas ligeramente flexionadas (10-15 grados) y FIJAS en esa posición. No se mueven durante el ejercicio."
+          "text": "Inclínate hacia adelante con bisagra de cadera (como el peso muerto rumano), rodillas ligeramente flexionadas. El torso debe estar casi paralelo al suelo."
         },
         {
-          "text": "Pecho alto, hombros atrás, espalda COMPLETAMENTE RECTA. Imagina una escoba pegada a tu espalda desde la cabeza hasta el sacro."
+          "text": "Agarra la barra con las manos un poco más ancho que los hombros, palmas hacia ti. Espalda completamente recta, core apretado."
         },
         {
-          "text": "Haz una bisagra de cadera: empuja las caderas hacia atrás mientras bajas la barra pegada a tus piernas. La barra baja porque las caderas van atrás, no porque doblas la espalda."
+          "text": "Tira de la barra hacia tu abdomen bajo, llevando los codos hacia atrás. Aprieta las escápulas al final del movimiento."
         },
         {
-          "text": "Baja hasta que sientas un estiramiento en los isquiotibiales (parte trasera del muslo), normalmente a media espinilla. Vuelve empujando las caderas hacia adelante y apretando los glúteos."
+          "text": "Baja la barra de forma controlada hasta que toque el suelo (o casi). Cada repetición empieza desde abajo."
         }
       ],
-      "tip": "Este ejercicio es EXCELENTE para los isquios y glúteos, pero solo si la técnica es perfecta. Grábate en vídeo con el móvil si puedes para ver que tu espalda NO se redondea.",
-      "alert": "PROTECCIÓN LUMBAR: Si en algún momento sientes que la espalda se redondea o hay tensión en las lumbares, para. Reduce el peso o la profundidad. La técnica es lo primero."
+      "tip": "La clave está en mantener la posición del torso estable. No uses impulso ni balancees el cuerpo. Si te cuesta mantener la postura, haz remo en máquina sentado.",
+      "alert": "Si tus lumbares están sensibles por las sentadillas, CAMBIA a remo en máquina o polea baja sentado. No hay que ser héroe la primera semana."
     },
     {
       "id": "prensa-piernas",
@@ -150,12 +150,37 @@
           "text": "Empuja con toda la planta del pie, especialmente talones. Extiende las piernas pero sin bloquear completamente las rodillas arriba."
         }
       ],
-      "tip": "Aquí puedes meter más peso que en sentadilla porque tu espalda está apoyada. Perfecto para trabajar las piernas sin preocuparte de las lumbares."
+      "tip": "Aquí puedes meter más peso que en sentadilla porque tu espalda está completamente apoyada. Perfecto para trabajar las piernas sin preocuparte de las lumbares."
+    },
+    {
+      "id": "jalones-agarre-neutro",
+      "name": "Jalones Agarre Neutro (o Dominadas Asistidas)",
+      "order": 4,
+      "type": "secundario",
+      "series": 3,
+      "reps": "10-12",
+      "rest": "75s",
+      "weight": "ajustar a capacidad",
+      "steps": [
+        {
+          "text": "Siéntate en la máquina de jalones con agarre neutro (palmas enfrentadas). Si tu gimnasio no tiene este agarre, usa el supino (palmas hacia ti)."
+        },
+        {
+          "text": "Mete las piernas bajo las almohadillas. Agarra el handle, inclínate ligeramente hacia atrás (10-15 grados)."
+        },
+        {
+          "text": "Tira del handle hacia la parte alta del pecho, llevando los codos hacia abajo y apretando las escápulas."
+        },
+        {
+          "text": "Sube de forma controlada hasta que los brazos estén casi extendidos arriba. Siente el estiramiento en la espalda."
+        }
+      ],
+      "tip": "El agarre neutro es más amable con los hombros. Si puedes hacer dominadas sin asistencia (aunque sean 3-4), hazlas. Si no, máquina asistida o jalones."
     },
     {
       "id": "curl-femoral",
-      "name": "Curl Femoral en Máquina (Tumbado o Sentado)",
-      "order": 4,
+      "name": "Curl Femoral en Máquina",
+      "order": 5,
       "type": "secundario",
       "series": 3,
       "reps": "12",
@@ -175,42 +200,16 @@
           "text": "Baja de forma controlada hasta la posición inicial. No dejes caer el peso."
         }
       ],
-      "tip": "Los isquiotibiales son clave para la salud de las rodillas y la espalda baja. No los descuides."
+      "tip": "Los isquiotibiales son fundamentales para la salud de las rodillas y protegen la espalda baja. Dale importancia a este ejercicio aunque parezca secundario."
     },
     {
-      "id": "elevaciones-gemelos",
-      "name": "Elevaciones de Gemelos en Máquina",
-      "order": 5,
-      "type": "secundario",
-      "series": 3,
-      "reps": "15-20",
-      "rest": "60s",
-      "weight": "40-60kg",
-      "steps": [
-        {
-          "text": "Colócate en la máquina de gemelos (de pie o sentado). Hombros bajo las almohadillas, puntas de los pies en el borde de la plataforma."
-        },
-        {
-          "text": "Baja los talones todo lo que puedas, sintiendo el estiramiento en los gemelos."
-        },
-        {
-          "text": "Empuja con las puntas de los pies para subir lo más alto posible. Contrae los gemelos arriba durante 1 segundo."
-        },
-        {
-          "text": "Baja de forma controlada a la posición inicial."
-        }
-      ],
-      "tip": "Los gemelos responden bien a muchas repeticiones. Si puedes hacer más de 20, sube el peso."
-    },
-    {
-      "id": "plancha-abdominal-pierna",
+      "id": "plancha-abdominal",
       "name": "Plancha Abdominal",
       "order": 6,
       "type": "core",
       "series": 3,
       "reps": "30-45s",
       "rest": "60s",
-      "weight": "peso corporal",
       "steps": [
         {
           "text": "Apóyate en los antebrazos y las puntas de los pies. El cuerpo forma una línea recta de cabeza a talones."
@@ -222,7 +221,7 @@
           "text": "Mantén la posición respirando de forma controlada. Si empiezas a temblar mucho, para y descansa."
         }
       ],
-      "alert": "Este ejercicio es FUNDAMENTAL para proteger tus lumbares. Hazlo siempre, no te lo saltes."
+      "alert": "Este ejercicio es FUNDAMENTAL para proteger tus lumbares después del trabajo de pierna. No te lo saltes nunca."
     },
     {
       "id": "bird-dog",
@@ -232,7 +231,6 @@
       "series": 3,
       "reps": "10 por lado",
       "rest": "45s",
-      "weight": "peso corporal",
       "steps": [
         {
           "text": "Colócate a cuatro patas (manos bajo los hombros, rodillas bajo las caderas). Espalda completamente plana."
@@ -247,48 +245,8 @@
           "text": "Vuelve a la posición inicial de forma controlada. Repite con el otro lado (brazo izquierdo + pierna derecha). Eso es 1 rep por lado."
         }
       ],
-      "tip": "Este ejercicio enseña a tu core a estabilizar la columna mientras mueves las extremidades. Es EXCELENTE para prevenir dolor lumbar.",
-      "alert": "La clave es NO rotar el tronco ni las caderas. Tu espalda debe permanecer completamente estable. Si no puedes, reduce el rango de movimiento."
-    },
-    {
-      "id": "pallof-press",
-      "name": "Pallof Press (Antirotación)",
-      "order": 8,
-      "type": "core",
-      "series": 2,
-      "reps": "12 por lado",
-      "rest": "45s",
-      "weight": "10-15kg en polea",
-      "steps": [
-        {
-          "text": "Coloca una polea a la altura del pecho con un handle. Ponte de lado a la polea, agarrando el handle con ambas manos a la altura del pecho."
-        },
-        {
-          "text": "Da 2-3 pasos para alejarte de la polea hasta que haya tensión. Pies ancho de hombros, rodillas ligeramente flexionadas."
-        },
-        {
-          "text": "Con el core muy apretado, extiende los brazos hacia adelante (alejándote de la polea). La polea intentará rotarte hacia ella: NO LO PERMITAS."
-        },
-        {
-          "text": "Mantén los brazos extendidos 2 segundos. Vuelve las manos al pecho de forma controlada. Completa todas las reps de un lado antes de cambiar."
-        }
-      ],
-      "tip": "Este ejercicio entrena tu core para resistir rotaciones no deseadas. Es uno de los MEJORES para proteger la espalda baja en la vida diaria (cargar a tu hijo, girar con peso, etc.).",
-      "alert": "Si no tienes polea, puedes usar una banda elástica atada a un punto fijo. Lo importante es resistir la rotación, no el peso que uses."
-    }
-  ],
-  "notes": [
-    {
-      "title": "Nota sobre las lumbares hoy",
-      "text": "El día de pierna es el más delicado para tus lumbares. Los 3 ejercicios de core al final NO son opcionales. Son tu seguro de vida para una espalda sana. Dedícales toda tu atención."
-    },
-    {
-      "title": "Sensaciones esperadas",
-      "text": "Es normal que mañana (viernes) notes las piernas cargadas. Si te cuesta bajar escaleras, perfecto: significa que has trabajado bien. Camina un poco durante el día para oxigenar los músculos."
-    },
-    {
-      "title": "Hidratación",
-      "text": "Hoy vas a sudar más que el martes. Lleva tu botella llena y bebe entre series. Objetivo: 500ml durante el entrenamiento mínimo."
+      "tip": "Este ejercicio enseña a tu core a estabilizar la columna mientras mueves las extremidades. Es EXCELENTE para prevenir dolor lumbar y clave después de un día de sentadillas.",
+      "alert": "La clave es NO rotar el tronco ni las caderas. Tu espalda debe permanecer completamente estable. Si no puedes, reduce el rango de movimiento o haz menos reps con técnica perfecta."
     }
   ]
 }
