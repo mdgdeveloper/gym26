@@ -1,0 +1,145 @@
+{
+    "id": "jueves-torso-fase1-semana2",
+    "title": "JUEVES · TORSO",
+    "date": "2026-02-12",
+    "focus": "Torso completo · Adaptación muscular",
+    "phase": "Fase 1 - Adaptación",
+    "week": 2,
+    "summary": {
+        "cardio": "5 min",
+        "warmup": "8 min",
+        "training": "30 min",
+        "stretch": "5 min"
+    },
+    "blocks": [
+        {
+            "type": "cardio",
+            "title": "Activación general",
+            "description": "Bici estática, remo o cinta. Ritmo suave.",
+            "duration": "5 min",
+            "items": []
+        },
+        {
+            "type": "warmup",
+            "title": "Movilidad y activación de torso",
+            "duration": "8 min",
+            "items": [
+                {
+                    "text": "Círculos de hombros + brazos · 15 reps"
+                },
+                {
+                    "text": "Movilidad escapular (retracciones) · 2 x 12"
+                },
+                {
+                    "text": "Rotaciones torácicas · 10 por lado"
+                },
+                {
+                    "text": "Flexiones apoyando rodillas · 2 x 8-10"
+                },
+                {
+                    "text": "Face pull con banda o polea ligera · 2 x 12-15"
+                }
+            ]
+        },
+        {
+            "type": "stretch",
+            "title": "Estiramientos",
+            "duration": "5 min",
+            "items": [
+                {
+                    "bold": "Pectoral:",
+                    "text": "30s por lado"
+                },
+                {
+                    "bold": "Dorsal:",
+                    "text": "30s"
+                },
+                {
+                    "bold": "Hombros:",
+                    "text": "25-30s"
+                },
+                {
+                    "bold": "Trapecio/cuello:",
+                    "text": "suave · 20-25s"
+                }
+            ]
+        }
+    ],
+    "exercises": [
+        {
+            "id": "press-maquina",
+            "name": "Press de Pecho en Máquina o Mancuernas",
+            "order": 1,
+            "type": "principal",
+            "series": 3,
+            "reps": "10-12",
+            "rest": "90s",
+            "weight": "moderado",
+            "tip": "Control total. No bloquees codos arriba."
+        },
+        {
+            "id": "jalon-pecho",
+            "name": "Jalón al Pecho",
+            "order": 2,
+            "type": "principal",
+            "series": 3,
+            "reps": "10-12",
+            "rest": "90s",
+            "weight": "moderado",
+            "tip": "Pecho alto, lleva los codos hacia abajo."
+        },
+        {
+            "id": "press-hombro-maquina",
+            "name": "Press Hombro en Máquina o Mancuernas",
+            "order": 3,
+            "type": "secundario",
+            "series": 3,
+            "reps": "10-12",
+            "rest": "75s",
+            "weight": "ligero-moderado",
+            "tip": "Sin arquear la espalda."
+        },
+        {
+            "id": "remo-maquina",
+            "name": "Remo en Máquina o Polea Baja",
+            "order": 4,
+            "type": "secundario",
+            "series": 3,
+            "reps": "12",
+            "rest": "75s",
+            "weight": "moderado",
+            "tip": "Aprieta escápulas en cada repetición."
+        },
+        {
+            "id": "elevaciones-laterales",
+            "name": "Elevaciones Laterales",
+            "order": 5,
+            "type": "aislamiento",
+            "series": 2,
+            "reps": "12-15",
+            "rest": "60s",
+            "weight": "ligero",
+            "tip": "Mejor poco peso y buena técnica."
+        },
+        {
+            "id": "curl-biceps",
+            "name": "Curl Bíceps con Mancuernas",
+            "order": 6,
+            "type": "aislamiento",
+            "series": 2,
+            "reps": "12",
+            "rest": "60s",
+            "weight": "ligero-moderado"
+        },
+        {
+            "id": "extension-triceps",
+            "name": "Extensión de Tríceps en Polea",
+            "order": 7,
+            "type": "aislamiento",
+            "series": 2,
+            "reps": "12",
+            "rest": "60s",
+            "weight": "ligero-moderado"
+        }
+    ]
+}
