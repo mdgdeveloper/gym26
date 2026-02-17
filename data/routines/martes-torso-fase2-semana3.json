@@ -1,0 +1,162 @@
+{
+    "id": "martes-torso-fase2-semana3",
+    "title": "MARTES · TORSO · Fase 2 - Semana 3",
+    "date": "2026-02-17",
+    "focus": "Torso completo · Fuerza base + hipertrofia",
+    "phase": "Fase 2 - Progresión",
+    "week": 3,
+    "summary": {
+        "cardio": "5 min",
+        "warmup": "6 min",
+        "training": "32 min",
+        "stretch": "5 min"
+    },
+    "blocks": [
+        {
+            "type": "cardio",
+            "title": "Activación general",
+            "description": "Bici, remo o cinta. Ritmo suave-medio.",
+            "duration": "5 min",
+            "items": []
+        },
+        {
+            "type": "warmup",
+            "title": "Movilidad y activación de torso",
+            "duration": "6 min",
+            "items": [
+                {
+                    "text": "Círculos de hombros y brazos · 15 reps"
+                },
+                {
+                    "text": "Movilidad escapular (retracción/protracción) · 2 x 12"
+                },
+                {
+                    "text": "Rotaciones torácicas · 10 por lado"
+                },
+                {
+                    "text": "Flexiones apoyando rodillas o completas · 2 x 8"
+                }
+            ]
+        },
+        {
+            "type": "stretch",
+            "title": "Estiramientos",
+            "duration": "5 min",
+            "items": [
+                {
+                    "bold": "Pectoral:",
+                    "text": "30s por lado"
+                },
+                {
+                    "bold": "Dorsal:",
+                    "text": "30s"
+                },
+                {
+                    "bold": "Hombros:",
+                    "text": "25-30s"
+                },
+                {
+                    "bold": "Tríceps:",
+                    "text": "25s por lado"
+                }
+            ]
+        }
+    ],
+    "exercises": [
+        {
+            "id": "press-banca",
+            "name": "Press de Banca con Barra",
+            "order": 1,
+            "type": "principal",
+            "series": 4,
+            "reps": "8-10",
+            "rest": "2 min",
+            "weight": "moderado",
+            "tip": "Sube ligeramente el peso respecto a la fase 1. Prioriza control y estabilidad."
+        },
+        {
+            "id": "remo-polea-baja",
+            "name": "Remo en Polea Baja",
+            "order": 2,
+            "type": "principal",
+            "series": 4,
+            "reps": "8-10",
+            "rest": "2 min",
+            "weight": "moderado",
+            "tip": "Pecho alto, pausa 1 segundo apretando escápulas."
+        },
+        {
+            "id": "press-hombros",
+            "name": "Press de Hombros con Mancuernas",
+            "order": 3,
+            "type": "secundario",
+            "series": 3,
+            "reps": "9-11",
+            "rest": "90s",
+            "weight": "moderado",
+            "tip": "Controla la bajada. No arquees la espalda."
+        },
+        {
+            "id": "jalon-pecho",
+            "name": "Jalón al Pecho en Polea",
+            "order": 4,
+            "type": "secundario",
+            "series": 3,
+            "reps": "10",
+            "rest": "90s",
+            "weight": "moderado-alto",
+            "tip": "Lleva los codos hacia abajo, no hacia atrás."
+        },
+        {
+            "id": "elevaciones-laterales",
+            "name": "Elevaciones Laterales",
+            "order": 5,
+            "type": "aislamiento",
+            "series": 3,
+            "reps": "12-15",
+            "rest": "60s",
+            "weight": "ligero",
+            "tip": "Sube hasta la altura del hombro, sin balanceo."
+        },
+        {
+            "id": "curl-biceps",
+            "name": "Curl de Bíceps con Mancuernas",
+            "order": 6,
+            "type": "aislamiento",
+            "series": 3,
+            "reps": "10-12",
+            "rest": "60s",
+            "weight": "moderado"
+        },
+        {
+            "id": "extension-triceps",
+            "name": "Extensión de Tríceps en Polea",
+            "order": 7,
+            "type": "aislamiento",
+            "series": 3,
+            "reps": "10-12",
+            "rest": "60s",
+            "weight": "moderado"
+        },
+        {
+            "id": "plancha",
+            "name": "Plancha Abdominal",
+            "order": 8,
+            "type": "core",
+            "series": 3,
+            "reps": "35-45s",
+            "rest": "45s",
+            "tip": "Más tiempo bajo tensión que en fase 1."
+        },
+        {
+            "id": "dead-bug",
+            "name": "Dead Bug",
+            "order": 9,
+            "type": "core",
+            "series": 2,
+            "reps": "10 por lado",
+            "rest": "45s",
+            "tip": "Movimiento lento y controlado. Prioriza estabilidad lumbar."
+        }
+    ]
+}
