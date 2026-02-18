@@ -72,7 +72,18 @@
             "reps": "8-10",
             "rest": "2 min",
             "weight": "moderado",
-            "tip": "Sube ligeramente el peso respecto a la fase 1. Prioriza control y estabilidad."
+            "tip": "Sube ligeramente el peso respecto a la fase 1. Prioriza control y estabilidad.",
+            "steps": [
+                {
+                    "text": "Acuestate en el banco con los pies firmes en el suelo. Agarra la barra con las manos un poco más abiertas que el ancho de los hombros."
+                },
+                {
+                    "text": "Desbloquea la barra y bájala lentamente hasta el pecho, manteniendo los codos en un ángulo de aproximadamente 45 grados."
+                },
+                {
+                    "text": "Haz una pausa breve tocando el pecho, luego empuja la barra hacia arriba hasta extender completamente los brazos. No bloquees los codos al final del movimiento."
+                }
+            ]
         },
         {
             "id": "remo-polea-baja",
@@ -83,7 +94,18 @@
             "reps": "8-10",
             "rest": "2 min",
             "weight": "moderado",
-            "tip": "Pecho alto, pausa 1 segundo apretando escápulas."
+            "tip": "Pecho alto, pausa 1 segundo apretando escápulas.",
+            "steps": [
+                {
+                    "text": "Siéntate en la máquina de remo con los pies apoyados en las plataformas y las rodillas ligeramente flexionadas. Agarra el mango con ambas manos."
+                },
+                {
+                    "text": "Tira del mango hacia tu abdomen, manteniendo el torso erguido y los codos cerca del cuerpo. Concéntrate en apretar las escápulas al final del movimiento."     
+                },
+                {
+                    "text": "Haz una pausa de 1 segundo apretando las escápulas, luego extiende los brazos lentamente para volver a la posición inicial."
+                }
+            ]
         },
         {
             "id": "press-hombros",
@@ -94,7 +116,18 @@
             "reps": "9-11",
             "rest": "90s",
             "weight": "moderado",
-            "tip": "Controla la bajada. No arquees la espalda."
+            "tip": "Controla la bajada. No arquees la espalda.",
+            "steps": [
+                {
+                    "text": "Siéntate en un banco con respaldo y sostén una mancuerna en cada mano a la altura de los hombros, con las palmas mirando hacia adelante."
+                },
+                {
+                    "text": "Empuja las mancuernas hacia arriba hasta que los brazos estén completamente extendidos, pero sin bloquear los codos. Mantén el torso estable y evita arquear la espalda."      
+        },  
+                {
+                    "text": "Baja las mancuernas lentamente de vuelta a la posición inicial, controlando el movimiento."
+                }
+            ]
         },
         {
             "id": "jalon-pecho",
@@ -105,7 +138,18 @@
             "reps": "10",
             "rest": "90s",
             "weight": "moderado-alto",
-            "tip": "Lleva los codos hacia abajo, no hacia atrás."
+            "tip": "Lleva los codos hacia abajo, no hacia atrás.",
+            "steps": [
+                {
+                    "text": "Siéntate en la máquina de jalones con las rodillas aseguradas debajo de los cojines. Agarra la barra con un agarre amplio, con las palmas mirando hacia adelante."
+                },
+                {
+                    "text": "Tira de la barra hacia tu pecho, llevando los codos hacia abajo y ligeramente hacia atrás. Evita llevar los codos completamente hacia atrás para no involucrar demasiado el trapecio."      
+                },
+                {
+                    "text": "Haz una pausa breve apretando los dorsales, luego extiende los brazos lentamente para volver a la posición inicial."
+                }
+            ]
         },
         {
             "id": "elevaciones-laterales",
@@ -116,7 +160,18 @@
             "reps": "12-15",
             "rest": "60s",
             "weight": "ligero",
-            "tip": "Sube hasta la altura del hombro, sin balanceo."
+            "tip": "Sube hasta la altura del hombro, sin balanceo.",
+            "steps": [
+                {
+                    "text": "Párate con una mancuerna en cada mano a los lados del cuerpo, con las palmas mirando hacia adentro."     
+        },
+                {
+                    "text": "Levanta las mancuernas hacia los lados hasta que estén a la altura de los hombros, manteniendo un ligero doblez en los codos. Evita balancear el cuerpo para levantar las mancuernas."      
+                },
+                {
+                    "text": "Baja las mancuernas lentamente de vuelta a la posición inicial, controlando el movimiento."
+                }
+            ]
         },
         {
             "id": "curl-biceps",
@@ -126,7 +181,19 @@
             "series": 3,
             "reps": "10-12",
             "rest": "60s",
-            "weight": "moderado"
+            "weight": "moderado",
+            "tip": "Codos pegados al cuerpo, movimiento controlado.",
+            "steps": [
+                {
+                    "text": "Párate con una mancuerna en cada mano a los lados del cuerpo, con las palmas mirando hacia adelante."  
+        },
+                {
+                    "text": "Flexiona los codos para levantar las mancuernas hacia los hombros, manteniendo los codos pegados al cuerpo. Evita balancear el torso para levantar las mancuernas."      
+                },
+                {
+                    "text": "Haz una pausa breve apretando los bíceps, luego baja las mancuernas lentamente de vuelta a la posición inicial, controlando el movimiento."
+                }
+            ]
         },
         {
             "id": "extension-triceps",
@@ -136,7 +203,19 @@
             "series": 3,
             "reps": "10-12",
             "rest": "60s",
-            "weight": "moderado"
+            "weight": "moderado",
+            "tip": "Mantén los codos fijos, solo mueve los antebrazos.",
+            "steps": [
+                {
+                    "text": "Párate frente a la máquina de polea alta con una barra o cuerda. Agarra el accesorio con las palmas hacia abajo y los codos pegados al cuerpo."
+        },
+                {
+                    "text": "Extiende los brazos hacia abajo hasta que estén completamente extendidos, manteniendo los codos fijos en su posición. Solo mueve los antebrazos durante el movimiento."      
+                },
+                {
+                    "text": "Haz una pausa breve apretando los tríceps, luego flexiona los codos lentamente para volver a la posición inicial, controlando el movimiento."
+                }
+            ]
         },
         {
             "id": "plancha",
@@ -146,7 +225,18 @@
             "series": 3,
             "reps": "35-45s",
             "rest": "45s",
-            "tip": "Más tiempo bajo tensión que en fase 1."
+            "tip": "Más tiempo bajo tensión que en fase 1.",
+            "steps": [
+                {
+                    "text": "Colócate en posición de plancha con los antebrazos apoyados en el suelo y el cuerpo formando una línea recta desde la cabeza hasta los talones. Asegúrate de mantener el abdomen contraído y las caderas alineadas durante toda la duración del ejercicio."
+                },
+                {
+                    "text": "Mantén esta posición durante 35-45 segundos, enfocándote en mantener la estabilidad y la tensión en el core. Descansa durante 45 segundos entre series."
+                },
+                    {
+                        "text": "Si sientes que puedes mantener la posición durante más tiempo, intenta aumentar gradualmente el tiempo bajo tensión en las siguientes sesiones."
+                    }
+            ]
         },
         {
             "id": "dead-bug",
@@ -156,7 +246,18 @@
             "series": 2,
             "reps": "10 por lado",
             "rest": "45s",
-            "tip": "Movimiento lento y controlado. Prioriza estabilidad lumbar."
+            "tip": "Movimiento lento y controlado. Prioriza estabilidad lumbar.",
+            "steps": [
+                {
+                    "text": "Acuéstate de espaldas con los brazos extendidos hacia el techo y las piernas levantadas con las rodillas flexionadas a 90 grados. Esta es la posición inicial."
+                },
+                {
+                    "text": "Extiende lentamente el brazo derecho hacia atrás y la pierna izquierda hacia adelante, manteniendo ambos a unos centímetros del suelo. Asegúrate de mantener la espalda baja en contacto con el suelo durante todo el movimiento."      
+                },
+                {
+                    "text": "Haz una pausa breve, luego regresa lentamente a la posición inicial. Repite el movimiento con el brazo izquierdo y la pierna derecha. Alterna entre ambos lados para completar las repeticiones."
+                }
+            ]
         }
     ]
 }
