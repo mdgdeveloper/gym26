@@ -1,0 +1,260 @@
+{
+  "id": "martes-torso-fase2-semana4",
+  "title": "MARTES · TORSO · Fase 2 - Semana 4",
+  "date": "2026-02-24",
+  "focus": "Torso completo · Fuerza base + hipertrofia",
+  "phase": "Fase 2 - Progresión",
+  "week": 4,
+  "summary": {
+    "cardio": "5 min",
+    "warmup": "6 min",
+    "training": "34 min",
+    "stretch": "5 min"
+  },
+  "blocks": [
+    {
+      "type": "cardio",
+      "title": "Activación general",
+      "description": "Bici, remo o cinta. Ritmo suave-medio.",
+      "duration": "5 min",
+      "items": []
+    },
+    {
+      "type": "warmup",
+      "title": "Movilidad y activación de torso",
+      "duration": "6 min",
+      "items": [
+        {
+          "text": "Círculos de hombros y brazos · 15 reps"
+        },
+        {
+          "text": "Movilidad escapular (retracción/protracción) · 2 x 12"
+        },
+        {
+          "text": "Rotaciones torácicas · 10 por lado"
+        },
+        {
+          "text": "Flexiones apoyando rodillas o completas · 2 x 8-10"
+        }
+      ]
+    },
+    {
+      "type": "stretch",
+      "title": "Estiramientos",
+      "duration": "5 min",
+      "items": [
+        {
+          "bold": "Pectoral:",
+          "text": "30s por lado"
+        },
+        {
+          "bold": "Dorsal:",
+          "text": "30s"
+        },
+        {
+          "bold": "Hombros:",
+          "text": "25-30s"
+        },
+        {
+          "bold": "Tríceps:",
+          "text": "25s por lado"
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "id": "press-banca",
+      "name": "Press de Banca con Barra",
+      "order": 1,
+      "type": "principal",
+      "series": 4,
+      "reps": "6-8",
+      "rest": "2 min",
+      "weight": "moderado-alto",
+      "tip": "Última semana de fase 2: sube un poco si la técnica es sólida, sin perder control.",
+      "steps": [
+        {
+          "text": "Acuéstate en el banco con los pies firmes en el suelo. Agarra la barra con las manos un poco más abiertas que el ancho de los hombros."
+        },
+        {
+          "text": "Baja la barra lentamente hasta el pecho manteniendo los codos en un ángulo de 45 grados."
+        },
+        {
+          "text": "Empuja la barra hacia arriba hasta extender los brazos sin bloquear codos."
+        }
+      ]
+    },
+    {
+      "id": "remo-polea-baja",
+      "name": "Remo en Polea Baja",
+      "order": 2,
+      "type": "principal",
+      "series": 4,
+      "reps": "6-8",
+      "rest": "2 min",
+      "weight": "moderado-alto",
+      "tip": "Pecho alto y 1s de pausa apretando escápulas.",
+      "steps": [
+        {
+          "text": "Siéntate en la máquina con los pies apoyados y las rodillas ligeramente flexionadas. Agarra el mango con ambas manos."
+        },
+        {
+          "text": "Tira del mango hacia el abdomen, codos cerca del cuerpo."
+        },
+        {
+          "text": "Haz una pausa breve apretando escápulas y vuelve controlado a la posición inicial."
+        }
+      ]
+    },
+    {
+      "id": "press-hombros",
+      "name": "Press de Hombros con Mancuernas",
+      "order": 3,
+      "type": "secundario",
+      "series": 3,
+      "reps": "8-10",
+      "rest": "90s",
+      "weight": "moderado",
+      "tip": "Control total en la bajada, sin arquear la espalda.",
+      "steps": [
+        {
+          "text": "Siéntate con respaldo y sostén las mancuernas a la altura de los hombros."
+        },
+        {
+          "text": "Empuja hacia arriba hasta casi extender los codos."
+        },
+        {
+          "text": "Baja de forma controlada hasta la posición inicial."
+        }
+      ]
+    },
+    {
+      "id": "jalon-pecho",
+      "name": "Jalón al Pecho en Polea",
+      "order": 4,
+      "type": "secundario",
+      "series": 3,
+      "reps": "8-10",
+      "rest": "90s",
+      "weight": "moderado-alto",
+      "tip": "Lleva los codos hacia abajo y siente los dorsales trabajar.",
+      "steps": [
+        {
+          "text": "Siéntate con las rodillas aseguradas y agarra la barra con agarre amplio."
+        },
+        {
+          "text": "Tira la barra hacia la parte alta del pecho llevando los codos hacia abajo."
+        },
+        {
+          "text": "Vuelve arriba de forma controlada, sin impulso."
+        }
+      ]
+    },
+    {
+      "id": "elevaciones-laterales",
+      "name": "Elevaciones Laterales",
+      "order": 5,
+      "type": "aislamiento",
+      "series": 3,
+      "reps": "12-15",
+      "rest": "60s",
+      "weight": "ligero-moderado",
+      "tip": "Sube hasta la altura del hombro, sin balanceo.",
+      "steps": [
+        {
+          "text": "De pie, mancuernas a los lados con las palmas mirando hacia adentro."
+        },
+        {
+          "text": "Eleva las mancuernas hasta la altura del hombro con un ligero doblez en los codos."
+        },
+        {
+          "text": "Baja lento y controlado a la posición inicial."
+        }
+      ]
+    },
+    {
+      "id": "curl-biceps",
+      "name": "Curl de Bíceps con Mancuernas",
+      "order": 6,
+      "type": "aislamiento",
+      "series": 3,
+      "reps": "10-12",
+      "rest": "60s",
+      "weight": "moderado",
+      "tip": "Codos fijos y movimiento controlado.",
+      "steps": [
+        {
+          "text": "De pie, mancuernas a los lados con palmas mirando hacia adelante."
+        },
+        {
+          "text": "Flexiona los codos para llevar las mancuernas hacia los hombros."
+        },
+        {
+          "text": "Baja lentamente a la posición inicial."
+        }
+      ]
+    },
+    {
+      "id": "extension-triceps",
+      "name": "Extensión de Tríceps en Polea",
+      "order": 7,
+      "type": "aislamiento",
+      "series": 3,
+      "reps": "10-12",
+      "rest": "60s",
+      "weight": "moderado",
+      "tip": "Codos fijos, solo se mueven los antebrazos.",
+      "steps": [
+        {
+          "text": "De pie frente a la polea alta, agarra el accesorio con las palmas hacia abajo."
+        },
+        {
+          "text": "Extiende los brazos hacia abajo hasta casi estirar los codos."
+        },
+        {
+          "text": "Vuelve lentamente a la posición inicial, sin mover los codos."
+        }
+      ]
+    },
+    {
+      "id": "plancha",
+      "name": "Plancha Abdominal",
+      "order": 8,
+      "type": "core",
+      "series": 3,
+      "reps": "45-55s",
+      "rest": "45s",
+      "tip": "Más tiempo bajo tensión sin perder alineación.",
+      "steps": [
+        {
+          "text": "Colócate en plancha con antebrazos apoyados y cuerpo en línea recta."
+        },
+        {
+          "text": "Aprieta abdomen y glúteos, mantén la postura durante el tiempo indicado."
+        }
+      ]
+    },
+    {
+      "id": "dead-bug",
+      "name": "Dead Bug",
+      "order": 9,
+      "type": "core",
+      "series": 2,
+      "reps": "10-12 por lado",
+      "rest": "45s",
+      "tip": "Movimiento lento, espalda baja pegada al suelo.",
+      "steps": [
+        {
+          "text": "Tumbado boca arriba, brazos extendidos al techo y rodillas a 90 grados."
+        },
+        {
+          "text": "Extiende brazo y pierna contrarios sin perder contacto de la espalda con el suelo."
+        },
+        {
+          "text": "Vuelve al centro y alterna de lado."
+        }
+      ]
+    }
+  ]
+}
