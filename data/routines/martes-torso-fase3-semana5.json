@@ -1,0 +1,263 @@
+{
+    "id": "martes-torso-fase3-semana5",
+    "title": "MARTES · TORSO · Fase 3 - Semana 5",
+    "date": "2026-03-03",
+    "focus": "Torso completo · Fuerza + Potencia",
+    "phase": "Fase 3 - Intensificación",
+    "week": 5,
+    "summary": {
+        "cardio": "5 min",
+        "warmup": "7 min",
+        "training": "38 min",
+        "stretch": "5 min"
+    },
+    "blocks": [
+        {
+            "type": "cardio",
+            "title": "Activación cardiovascular",
+            "description": "Bici, remo o cinta. Ritmo medio para preparar el sistema.",
+            "duration": "5 min",
+            "items": []
+        },
+        {
+            "type": "warmup",
+            "title": "Movilidad y activación neural",
+            "duration": "7 min",
+            "items": [
+                {
+                    "text": "Círculos de hombros y brazos · 20 reps progresivos"
+                },
+                {
+                    "text": "Movilidad escapular (retracción/protracción) · 3 x 15"
+                },
+                {
+                    "text": "Rotaciones torácicas con extensión · 12 por lado"
+                },
+                {
+                    "text": "Flexiones explosivas o completas · 2 x 5-8"
+                },
+                {
+                    "text": "Activación neural: press con barra vacía · 2 x 5"
+                }
+            ]
+        },
+        {
+            "type": "stretch",
+            "title": "Estiramientos y liberación",
+            "duration": "5 min",
+            "items": [
+                {
+                    "bold": "Pectoral:",
+                    "text": "35s por lado, enfoque profundo"
+                },
+                {
+                    "bold": "Dorsal:",
+                    "text": "35s, extensión completa"
+                },
+                {
+                    "bold": "Hombros:",
+                    "text": "30s por lado, múltiples ángulos"
+                },
+                {
+                    "bold": "Tríceps:",
+                    "text": "30s por lado con estiramiento adicional"
+                }
+            ]
+        }
+    ],
+    "exercises": [
+        {
+            "id": "press-banca",
+            "name": "Press de Banca con Barra",
+            "order": 1,
+            "type": "principal",
+            "series": 5,
+            "reps": "4-6",
+            "rest": "2.5 min",
+            "weight": "alto",
+            "tip": "Fase de fuerza: peso desafiante pero controlado. Técnica impecable es prioritaria.",
+            "steps": [
+                {
+                    "text": "Configuración precisa: ojos bajo la barra, pies firmes, escápulas retraídas y arco natural."
+                },
+                {
+                    "text": "Agarre firme un poco más amplio que hombros. Tensión corporal total antes de empezar."
+                },
+                {
+                    "text": "Desenchufe controlado, pausa de 1s en el pecho, explosión hacia arriba sin perder técnica."
+                }
+            ]
+        },
+        {
+            "id": "remo-polea-baja",
+            "name": "Remo en Polea Baja",
+            "order": 2,
+            "type": "principal",
+            "series": 4,
+            "reps": "5-7",
+            "rest": "2.5 min",
+            "weight": "alto",
+            "tip": "2s de pausa en la contracción máxima. Siente cada repetición.",
+            "steps": [
+                {
+                    "text": "Posición sólida: pecho alto, hombros atrás, core activado desde el inicio."
+                },
+                {
+                    "text": "Tirón potente hacia abdomen bajo, codos pegados al cuerpo."
+                },
+                {
+                    "text": "Pausa de 2s apretando escápulas, retorno controlado sin perder tensión."
+                }
+            ]
+        },
+        {
+            "id": "press-inclinado-mancuernas",
+            "name": "Press Inclinado con Mancuernas",
+            "order": 3,
+            "type": "secundario",
+            "series": 4,
+            "reps": "6-8",
+            "rest": "2 min",
+            "weight": "moderado-alto",
+            "tip": "Inclinación 30-45°. Rango completo sin comprometer hombros.",
+            "steps": [
+                {
+                    "text": "Banco inclinado estable, mancuernas en posición de press a nivel del pecho superior."
+                },
+                {
+                    "text": "Press hacia arriba y ligeramente hacia adentro, formando un arco natural."
+                },
+                {
+                    "text": "Bajada controlada hasta sentir estiramiento en pectorales, sin forzar."
+                }
+            ]
+        },
+        {
+            "id": "dominadas-asistidas",
+            "name": "Dominadas Asistidas o Jalón Cerrado",
+            "order": 4,
+            "type": "secundario",
+            "series": 4,
+            "reps": "6-8",
+            "rest": "2 min",
+            "weight": "moderado-alto",
+            "tip": "Si haces dominadas, busca la asistencia mínima. Si jalón, agarre neutro o supino.",
+            "steps": [
+                {
+                    "text": "Cuelga con agarre supino o neutro, escápulas activadas desde el inicio."
+                },
+                {
+                    "text": "Tirón potente llevando el pecho hacia la barra, codos hacia atrás."
+                },
+                {
+                    "text": "Bajada controlada hasta extensión completa, manteniendo tensión dorsal."
+                }
+            ]
+        },
+        {
+            "id": "press-militar-barra",
+            "name": "Press Militar con Barra",
+            "order": 5,
+            "type": "secundario",
+            "series": 3,
+            "reps": "6-8",
+            "rest": "90s",
+            "weight": "moderado",
+            "tip": "De pie, core súper activado. No arquees la espalda compensando.",
+            "steps": [
+                {
+                    "text": "De pie, barra en posición de rack frontal, codos hacia adelante."
+                },
+                {
+                    "text": "Press vertical explosivo, cabeza ligeramente hacia atrás para dar paso."
+                },
+                {
+                    "text": "Al pasar la frente, empuja la cabeza hacia adelante y extiende completamente."
+                }
+            ]
+        },
+        {
+            "id": "curl-martillo",
+            "name": "Curl Martillo con Mancuernas",
+            "order": 6,
+            "type": "aislamiento",
+            "series": 3,
+            "reps": "8-10",
+            "rest": "75s",
+            "weight": "moderado",
+            "tip": "Agarre neutro, movimiento estricto. Enfoque en braquial anterior.",
+            "steps": [
+                {
+                    "text": "De pie, mancuernas con agarre neutro (como martillos) a los lados."
+                },
+                {
+                    "text": "Curl alternado o simultáneo manteniendo los codos fijos."
+                },
+                {
+                    "text": "Subida controlada, pausa breve arriba, bajada en 2s."
+                }
+            ]
+        },
+        {
+            "id": "extension-triceps-copa",
+            "name": "Extensión de Tríceps Copa con Mancuerna",
+            "order": 7,
+            "type": "aislamiento",
+            "series": 3,
+            "reps": "8-10",
+            "rest": "75s",
+            "weight": "moderado",
+            "tip": "Una sola mancuerna pesada. Codos fijos, rango completo.",
+            "steps": [
+                {
+                    "text": "Sentado o de pie, sostén una mancuerna con ambas manos por encima de la cabeza."
+                },
+                {
+                    "text": "Baja la mancuerna por detrás de la cabeza flexionando solo los codos."
+                },
+                {
+                    "text": "Extiende hacia arriba manteniendo los codos en posición fija."
+                }
+            ]
+        },
+        {
+            "id": "plancha-diamante",
+            "name": "Plancha Diamante + Giros",
+            "order": 8,
+            "type": "core",
+            "series": 3,
+            "reps": "30s plancha + 10 giros",
+            "rest": "60s",
+            "tip": "Combinación desafiante: mantén 30s en plancha, luego 10 giros laterales.",
+            "steps": [
+                {
+                    "text": "Plancha con manos formando diamante bajo el pecho, cuerpo rígido."
+                },
+                {
+                    "text": "Mantén 30s, luego gira a plancha lateral alternando 10 veces total."
+                }
+            ]
+        },
+        {
+            "id": "russian-twist-peso",
+            "name": "Russian Twist con Peso",
+            "order": 9,
+            "type": "core",
+            "series": 3,
+            "reps": "15 por lado",
+            "rest": "45s",
+            "tip": "Disco o mancuerna de peso moderado. Piernas elevadas para más dificultad.",
+            "steps": [
+                {
+                    "text": "Sentado, piernas flexionadas y elevadas, tronco inclinado 45°."
+                },
+                {
+                    "text": "Con el peso en las manos, gira de lado a lado tocando el suelo."
+                },
+                {
+                    "text": "Mantén el core activado y las piernas estables durante todo el movimiento."
+                }
+            ]
+        }
+    ]
+}
