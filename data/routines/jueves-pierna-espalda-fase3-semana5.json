@@ -1,0 +1,266 @@
+{
+    "id": "jueves-pierna-espalda-fase3-semana5",
+    "title": "JUEVES · PIERNA + ESPALDA · Fase 3 - Semana 5",
+    "date": "2026-03-05",
+    "focus": "Pierna + Espalda · Fuerza + Potencia",
+    "phase": "Fase 3 - Intensificación",
+    "week": 5,
+    "summary": {
+        "cardio": "5 min",
+        "warmup": "7 min",
+        "training": "36 min",
+        "stretch": "5 min"
+    },
+    "blocks": [
+        {
+            "type": "cardio",
+            "title": "Activación cardiovascular",
+            "description": "Bici, remo o cinta. Ritmo medio para activar el sistema.",
+            "duration": "5 min",
+            "items": []
+        },
+        {
+            "type": "warmup",
+            "title": "Movilidad y activación pierna/espalda",
+            "duration": "7 min",
+            "items": [
+                {
+                    "text": "Movilidad de tobillos y caderas · 10 reps por dirección"
+                },
+                {
+                    "text": "Sentadillas sin peso + bisagra de cadera · 2 x 8"
+                },
+                {
+                    "text": "Puentes de glúteo con pausa · 2 x 10"
+                },
+                {
+                    "text": "Remo con banda elástica · 2 x 12"
+                },
+                {
+                    "text": "Buenos días con barra vacía · 2 x 8"
+                }
+            ]
+        },
+        {
+            "type": "stretch",
+            "title": "Estiramientos y descarga",
+            "duration": "5 min",
+            "items": [
+                {
+                    "bold": "Cuádriceps:",
+                    "text": "30s por lado"
+                },
+                {
+                    "bold": "Isquiotibiales:",
+                    "text": "30s"
+                },
+                {
+                    "bold": "Glúteos:",
+                    "text": "30s"
+                },
+                {
+                    "bold": "Dorsales:",
+                    "text": "30s"
+                }
+            ]
+        }
+    ],
+    "exercises": [
+        {
+            "id": "peso-muerto-rumano",
+            "name": "Peso Muerto Rumano con Barra",
+            "order": 1,
+            "type": "principal",
+            "series": 4,
+            "reps": "6-8",
+            "rest": "2.5 min",
+            "weight": "alto-moderado",
+            "tip": "Bisagra pura: espalda neutra y tensión en isquios.",
+            "steps": [
+                {
+                    "text": "Pies ancho de caderas, barra pegada a los muslos, agarre firme."
+                },
+                {
+                    "text": "Baja con bisagra de cadera manteniendo la espalda recta y rodillas ligeramente flexionadas."
+                },
+                {
+                    "text": "Desciende hasta sentir estiramiento en isquios, luego sube empujando caderas hacia adelante."
+                }
+            ]
+        },
+        {
+            "id": "sentadilla-frontal",
+            "name": "Sentadilla Frontal o Hack Squat",
+            "order": 2,
+            "type": "principal",
+            "series": 4,
+            "reps": "6-8",
+            "rest": "2 min",
+            "weight": "alto",
+            "tip": "Torso erguido, rodillas acompañan la línea de los pies.",
+            "steps": [
+                {
+                    "text": "Coloca la barra en rack frontal o si usas hack, apoya bien la espalda."
+                },
+                {
+                    "text": "Baja controlado hasta paralelo o un poco más, manteniendo el pecho alto."
+                },
+                {
+                    "text": "Sube de forma explosiva sin bloquear las rodillas arriba."
+                }
+            ]
+        },
+        {
+            "id": "remo-barra-t",
+            "name": "Remo con Barra T o Remo en Máquina",
+            "order": 3,
+            "type": "secundario",
+            "series": 3,
+            "reps": "8-10",
+            "rest": "90s",
+            "weight": "moderado-alto",
+            "tip": "Pausa 1s en la contracción y pecho estable.",
+            "steps": [
+                {
+                    "text": "Apoya el pecho si es máquina o mantén el torso firme si es barra T."
+                },
+                {
+                    "text": "Tira del agarre hacia el abdomen bajo, codos hacia atrás."
+                },
+                {
+                    "text": "Controla la bajada sin perder tensión dorsal."
+                }
+            ]
+        },
+        {
+            "id": "jalon-agarre-neutro",
+            "name": "Jalón al Pecho Agarre Neutro",
+            "order": 4,
+            "type": "secundario",
+            "series": 3,
+            "reps": "8-10",
+            "rest": "90s",
+            "weight": "moderado-alto",
+            "tip": "Codos hacia abajo, pecho alto todo el rango.",
+            "steps": [
+                {
+                    "text": "Siéntate con agarre neutro y activa escápulas antes de tirar."
+                },
+                {
+                    "text": "Baja el agarre hacia el pecho manteniendo el torso estable."
+                },
+                {
+                    "text": "Sube controlado hasta casi extender los brazos."
+                }
+            ]
+        },
+        {
+            "id": "hip-thrust-barra",
+            "name": "Hip Thrust con Barra",
+            "order": 5,
+            "type": "secundario",
+            "series": 3,
+            "reps": "8-10",
+            "rest": "90s",
+            "weight": "moderado-alto",
+            "tip": "Pausa 1s arriba apretando glúteos.",
+            "steps": [
+                {
+                    "text": "Apoya la parte alta de la espalda en el banco, barra sobre la cadera."
+                },
+                {
+                    "text": "Empuja con talones y eleva la cadera hasta alinear rodillas y hombros."
+                },
+                {
+                    "text": "Baja controlado sin perder tensión en glúteos."
+                }
+            ]
+        },
+        {
+            "id": "curl-femoral-maquina",
+            "name": "Curl Femoral en Máquina",
+            "order": 6,
+            "type": "secundario",
+            "series": 3,
+            "reps": "10-12",
+            "rest": "75s",
+            "weight": "moderado",
+            "tip": "Control total y pausa corta en la contracción.",
+            "steps": [
+                {
+                    "text": "Ajusta el rodillo sobre los tobillos y estabiliza la cadera."
+                },
+                {
+                    "text": "Flexiona llevando los talones hacia los glúteos sin despegar la cadera."
+                },
+                {
+                    "text": "Baja lento para maximizar tiempo bajo tensión."
+                }
+            ]
+        },
+        {
+            "id": "gemelos-prensa",
+            "name": "Elevaciones de Gemelos en Prensa",
+            "order": 7,
+            "type": "aislamiento",
+            "series": 3,
+            "reps": "12-15",
+            "rest": "60s",
+            "weight": "moderado",
+            "tip": "Recorrido completo: baja y estira, luego sube fuerte.",
+            "steps": [
+                {
+                    "text": "Coloca la punta de los pies en la plataforma y deja el talón libre."
+                },
+                {
+                    "text": "Desciende lento hasta sentir estiramiento en gemelos."
+                },
+                {
+                    "text": "Sube potente y mantén 1s arriba."
+                }
+            ]
+        },
+        {
+            "id": "plancha-lateral-elevada",
+            "name": "Plancha Lateral con Elevación",
+            "order": 8,
+            "type": "core",
+            "series": 3,
+            "reps": "30-40s por lado",
+            "rest": "45s",
+            "tip": "Cadera alta y estable, no colapses el hombro.",
+            "steps": [
+                {
+                    "text": "Apoya antebrazo y alinea hombro con codo."
+                },
+                {
+                    "text": "Eleva la cadera y mantén el cuerpo en línea."
+                },
+                {
+                    "text": "Si puedes, eleva la pierna superior para mayor dificultad."
+                }
+            ]
+        },
+        {
+            "id": "dead-bug-control",
+            "name": "Dead Bug Controlado",
+            "order": 9,
+            "type": "core",
+            "series": 3,
+            "reps": "10 por lado",
+            "rest": "45s",
+            "tip": "Espalda baja pegada al suelo, respiración controlada.",
+            "steps": [
+                {
+                    "text": "Túmbate boca arriba con piernas y brazos en 90 grados."
+                },
+                {
+                    "text": "Extiende brazo y pierna opuestos sin arquear la espalda."
+                },
+                {
+                    "text": "Vuelve lento y alterna lados."
+                }
+            ]
+        }
+    ]
+}
