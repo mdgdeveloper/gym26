@@ -1,0 +1,268 @@
+{
+    "id": "jueves-cuerpo-completo-fase3-semana6",
+    "title": "JUEVES · CUERPO COMPLETO · Fase 3 - Semana 6",
+    "date": "2026-03-12",
+    "focus": "Cuerpo completo · Todos los grupos musculares con maquinas",
+    "phase": "Fase 3 - Intensificacion",
+    "week": 6,
+    "summary": {
+        "cardio": "5 min",
+        "warmup": "7 min",
+        "training": "40 min",
+        "stretch": "5 min"
+    },
+    "blocks": [
+        {
+            "type": "cardio",
+            "title": "Activacion general",
+            "description": "Cinta, bici o eliptica a ritmo medio para elevar pulsaciones.",
+            "duration": "5 min",
+            "items": []
+        },
+        {
+            "type": "warmup",
+            "title": "Movilidad y preparacion global",
+            "duration": "7 min",
+            "items": [
+                {
+                    "text": "Movilidad de hombros y escápulas · 12 reps"
+                },
+                {
+                    "text": "Movilidad de cadera y tobillo · 10 reps por lado"
+                },
+                {
+                    "text": "Sentadilla al aire + bisagra de cadera · 2 x 8"
+                },
+                {
+                    "text": "Aperturas de pecho con banda · 2 x 12"
+                },
+                {
+                    "text": "Plancha corta de activacion · 2 x 20s"
+                }
+            ]
+        },
+        {
+            "type": "stretch",
+            "title": "Estiramientos finales",
+            "duration": "5 min",
+            "items": [
+                {
+                    "bold": "Pectoral y hombro:",
+                    "text": "30s por lado"
+                },
+                {
+                    "bold": "Dorsal:",
+                    "text": "30s por lado"
+                },
+                {
+                    "bold": "Cuadriceps e isquios:",
+                    "text": "30s por lado"
+                },
+                {
+                    "bold": "Gluteo y gemelo:",
+                    "text": "25-30s por lado"
+                }
+            ]
+        }
+    ],
+    "exercises": [
+        {
+            "id": "prensa-piernas-45",
+            "name": "Prensa de Piernas 45°",
+            "order": 1,
+            "type": "principal",
+            "series": 4,
+            "reps": "8-10",
+            "rest": "2 min",
+            "weight": "moderado-alto",
+            "tip": "Empuja con toda la planta del pie y evita bloquear rodillas.",
+            "steps": [
+                {
+                    "text": "Ajusta asiento y coloca los pies al ancho de hombros en la plataforma."
+                },
+                {
+                    "text": "Desciende controlado hasta 90 grados de rodilla sin despegar la cadera."
+                },
+                {
+                    "text": "Empuja fuerte hacia arriba manteniendo el core activo."
+                }
+            ]
+        },
+        {
+            "id": "press-pecho-maquina-convergente",
+            "name": "Press de Pecho en Maquina Convergente",
+            "order": 2,
+            "type": "principal",
+            "series": 4,
+            "reps": "8-10",
+            "rest": "2 min",
+            "weight": "moderado-alto",
+            "tip": "Escapulas estables y recorrido completo sin rebotes.",
+            "steps": [
+                {
+                    "text": "Ajusta el asiento para que las empunaduras queden a la altura media del pecho."
+                },
+                {
+                    "text": "Empuja hacia delante de forma potente y controlada."
+                },
+                {
+                    "text": "Vuelve lento hasta notar estiramiento en pectoral sin perder postura."
+                }
+            ]
+        },
+        {
+            "id": "jalon-pecho-polea",
+            "name": "Jalon al Pecho en Polea Alta",
+            "order": 3,
+            "type": "principal",
+            "series": 4,
+            "reps": "8-10",
+            "rest": "90s",
+            "weight": "moderado-alto",
+            "tip": "Pecho alto y codos hacia abajo durante todo el tiron.",
+            "steps": [
+                {
+                    "text": "Siéntate firme con muslos sujetos bajo las almohadillas."
+                },
+                {
+                    "text": "Tira la barra hacia la parte alta del pecho sin balancear el torso."
+                },
+                {
+                    "text": "Controla la subida y extiende casi por completo los brazos."
+                }
+            ]
+        },
+        {
+            "id": "remo-sentado-maquina",
+            "name": "Remo Sentado en Maquina",
+            "order": 4,
+            "type": "secundario",
+            "series": 3,
+            "reps": "10-12",
+            "rest": "90s",
+            "weight": "moderado",
+            "tip": "Pausa un segundo atras para activar bien la espalda media.",
+            "steps": [
+                {
+                    "text": "Apoya el pecho o mantén torso firme con la espalda neutra."
+                },
+                {
+                    "text": "Lleva las empunaduras hacia el abdomen bajo con codos pegados."
+                },
+                {
+                    "text": "Regresa controlado sin perder tension en dorsales."
+                }
+            ]
+        },
+        {
+            "id": "press-hombro-maquina",
+            "name": "Press de Hombro en Maquina",
+            "order": 5,
+            "type": "secundario",
+            "series": 3,
+            "reps": "10-12",
+            "rest": "75s",
+            "weight": "moderado",
+            "tip": "No arquees la espalda; mantén abdomen y gluteos activos.",
+            "steps": [
+                {
+                    "text": "Ajusta respaldo para iniciar con codos a 90 grados."
+                },
+                {
+                    "text": "Empuja sobre la cabeza manteniendo muñecas neutras."
+                },
+                {
+                    "text": "Desciende hasta el punto inicial de forma controlada."
+                }
+            ]
+        },
+        {
+            "id": "curl-femoral-sentado",
+            "name": "Curl Femoral Sentado en Maquina",
+            "order": 6,
+            "type": "secundario",
+            "series": 3,
+            "reps": "10-12",
+            "rest": "75s",
+            "weight": "moderado",
+            "tip": "Pausa corta en la contraccion para mas trabajo de isquios.",
+            "steps": [
+                {
+                    "text": "Ajusta rodillo sobre tobillos y respaldo pegado a la espalda."
+                },
+                {
+                    "text": "Flexiona las rodillas llevando talones hacia atras de forma fluida."
+                },
+                {
+                    "text": "Vuelve lento sin dejar caer el peso."
+                }
+            ]
+        },
+        {
+            "id": "extension-cuadriceps-maquina",
+            "name": "Extension de Cuadriceps en Maquina",
+            "order": 7,
+            "type": "secundario",
+            "series": 3,
+            "reps": "12",
+            "rest": "60s",
+            "weight": "ligero-moderado",
+            "tip": "Sube con control y evita impulso con la cadera.",
+            "steps": [
+                {
+                    "text": "Siéntate con rodillas alineadas al eje de giro de la maquina."
+                },
+                {
+                    "text": "Extiende rodillas hasta casi bloquear y aprieta cuadriceps arriba."
+                },
+                {
+                    "text": "Baja en 2-3 segundos para aumentar el tiempo bajo tension."
+                }
+            ]
+        },
+        {
+            "id": "elevacion-gemelos-maquina",
+            "name": "Elevacion de Gemelos en Maquina",
+            "order": 8,
+            "type": "secundario",
+            "series": 3,
+            "reps": "12-15",
+            "rest": "60s",
+            "weight": "moderado",
+            "tip": "Recorrido completo: estira abajo y contrae fuerte arriba.",
+            "steps": [
+                {
+                    "text": "Coloca la punta de los pies en la plataforma con talones libres."
+                },
+                {
+                    "text": "Baja lento para estirar gemelos y luego sube en forma explosiva."
+                },
+                {
+                    "text": "Mantén una pausa breve arriba antes de repetir."
+                }
+            ]
+        },
+        {
+            "id": "crunch-maquina",
+            "name": "Crunch en Maquina",
+            "order": 9,
+            "type": "core",
+            "series": 3,
+            "reps": "12-15",
+            "rest": "45s",
+            "weight": "ligero-moderado",
+            "tip": "Contrae abdomen en cada repeticion sin tirar del cuello.",
+            "steps": [
+                {
+                    "text": "Ajusta asiento y almohadilla para apoyar bien la zona toracica."
+                },
+                {
+                    "text": "Flexiona el tronco hacia delante apretando fuerte el abdomen."
+                },
+                {
+                    "text": "Regresa controlado manteniendo tension en el core."
+                }
+            ]
+        }
+    ]
+}
