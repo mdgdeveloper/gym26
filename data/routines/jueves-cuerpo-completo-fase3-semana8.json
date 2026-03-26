@@ -1,0 +1,268 @@
+{
+    "id": "jueves-cuerpo-completo-fase3-semana8",
+    "title": "JUEVES · CUERPO COMPLETO · Fase 3 - Semana 8",
+    "date": "2026-03-26",
+    "focus": "Cuerpo completo · Trabajo global de fuerza y acondicionamiento",
+    "phase": "Fase 3 - Consolidacion",
+    "week": 8,
+    "summary": {
+        "cardio": "6 min",
+        "warmup": "7 min",
+        "training": "42 min",
+        "stretch": "5 min"
+    },
+    "blocks": [
+        {
+            "type": "cardio",
+            "title": "Activacion general",
+            "description": "Cinta, bici o remo a ritmo medio para subir pulsaciones.",
+            "duration": "6 min",
+            "items": []
+        },
+        {
+            "type": "warmup",
+            "title": "Movilidad y activacion completa",
+            "duration": "7 min",
+            "items": [
+                {
+                    "text": "Movilidad de hombros y escapulas · 12 reps"
+                },
+                {
+                    "text": "Movilidad de cadera + tobillos · 10 reps por lado"
+                },
+                {
+                    "text": "Sentadilla al aire + alcance de brazos · 2 x 8"
+                },
+                {
+                    "text": "Bisagra de cadera sin carga · 2 x 10"
+                },
+                {
+                    "text": "Plancha frontal de activacion · 2 x 20s"
+                }
+            ]
+        },
+        {
+            "type": "stretch",
+            "title": "Estiramientos finales",
+            "duration": "5 min",
+            "items": [
+                {
+                    "bold": "Pecho y hombro:",
+                    "text": "30s por lado"
+                },
+                {
+                    "bold": "Espalda y dorsal:",
+                    "text": "30s por lado"
+                },
+                {
+                    "bold": "Cuadriceps e isquios:",
+                    "text": "30s por lado"
+                },
+                {
+                    "bold": "Gluteo y gemelo:",
+                    "text": "25-30s por lado"
+                }
+            ]
+        }
+    ],
+    "exercises": [
+        {
+            "id": "sentadilla-goblet-mancuerna",
+            "name": "Sentadilla Goblet con Mancuerna",
+            "order": 1,
+            "type": "principal",
+            "series": 4,
+            "reps": "8-10",
+            "rest": "2 min",
+            "weight": "moderado-alto",
+            "tip": "Mantén el torso firme y baja hasta un rango comodo sin colapsar rodillas.",
+            "steps": [
+                {
+                    "text": "Sujeta una mancuerna al pecho con pies al ancho de hombros."
+                },
+                {
+                    "text": "Desciende controlado llevando cadera hacia atras y rodillas alineadas."
+                },
+                {
+                    "text": "Empuja el suelo para subir manteniendo el abdomen activo."
+                }
+            ]
+        },
+        {
+            "id": "press-inclinado-mancuernas",
+            "name": "Press Inclinado con Mancuernas",
+            "order": 2,
+            "type": "principal",
+            "series": 4,
+            "reps": "8-10",
+            "rest": "2 min",
+            "weight": "moderado-alto",
+            "tip": "Controla la bajada y evita cerrar hombros al final del recorrido.",
+            "steps": [
+                {
+                    "text": "Ajusta banco inclinado y coloca pies firmes en el suelo."
+                },
+                {
+                    "text": "Baja mancuernas hacia linea media del pecho con codos a 45 grados."
+                },
+                {
+                    "text": "Empuja hacia arriba sin chocar mancuernas."
+                }
+            ]
+        },
+        {
+            "id": "remo-mancuerna-apoyo-banco",
+            "name": "Remo con Mancuerna con Apoyo en Banco",
+            "order": 3,
+            "type": "principal",
+            "series": 4,
+            "reps": "8-10 por lado",
+            "rest": "90s",
+            "weight": "moderado-alto",
+            "tip": "Lleva el codo hacia la cadera para cargar dorsal y espalda media.",
+            "steps": [
+                {
+                    "text": "Apoya mano y rodilla en banco manteniendo espalda neutra."
+                },
+                {
+                    "text": "Tira la mancuerna hacia el costado sin girar el tronco."
+                },
+                {
+                    "text": "Baja lento hasta extender brazo sin perder tension."
+                }
+            ]
+        },
+        {
+            "id": "peso-muerto-rumano-mancuernas",
+            "name": "Peso Muerto Rumano con Mancuernas",
+            "order": 4,
+            "type": "secundario",
+            "series": 3,
+            "reps": "10-12",
+            "rest": "90s",
+            "weight": "moderado",
+            "tip": "Mantén la espalda larga y siente el estiramiento en isquios.",
+            "steps": [
+                {
+                    "text": "Inicia de pie con mancuernas al frente y rodillas semieflexionadas."
+                },
+                {
+                    "text": "Empuja cadera hacia atras mientras deslizas las mancuernas cerca de piernas."
+                },
+                {
+                    "text": "Vuelve arriba apretando gluteos al final."
+                }
+            ]
+        },
+        {
+            "id": "jalon-pecho-agarre-neutro",
+            "name": "Jalon al Pecho en Polea (Agarre Neutro)",
+            "order": 5,
+            "type": "secundario",
+            "series": 3,
+            "reps": "10-12",
+            "rest": "75s",
+            "weight": "moderado",
+            "tip": "Inicia cada repeticion con hombros abajo y pecho abierto.",
+            "steps": [
+                {
+                    "text": "Ajusta muslos bajo almohadilla y toma agarre neutro."
+                },
+                {
+                    "text": "Tira hacia la parte alta del pecho sin balancear el torso."
+                },
+                {
+                    "text": "Regresa controlado manteniendo tension en dorsales."
+                }
+            ]
+        },
+        {
+            "id": "zancadas-caminando-mancuernas",
+            "name": "Zancadas Caminando con Mancuernas",
+            "order": 6,
+            "type": "secundario",
+            "series": 3,
+            "reps": "10 por pierna",
+            "rest": "75s",
+            "weight": "moderado",
+            "tip": "Da pasos estables y mantén la rodilla delantera alineada con el pie.",
+            "steps": [
+                {
+                    "text": "Sujeta mancuernas a los lados y activa el abdomen."
+                },
+                {
+                    "text": "Avanza en zancada hasta casi tocar el suelo con la rodilla trasera."
+                },
+                {
+                    "text": "Impulsa con la pierna delantera y continua alternando."
+                }
+            ]
+        },
+        {
+            "id": "elevaciones-laterales-mancuernas",
+            "name": "Elevaciones Laterales con Mancuernas",
+            "order": 7,
+            "type": "secundario",
+            "series": 3,
+            "reps": "12-15",
+            "rest": "60s",
+            "weight": "ligero-moderado",
+            "tip": "Sube hasta la linea de hombros sin encoger trapecios.",
+            "steps": [
+                {
+                    "text": "Colocate de pie con leve flexion de codos."
+                },
+                {
+                    "text": "Eleva los brazos hacia los lados en arco controlado."
+                },
+                {
+                    "text": "Desciende lento sin perder postura."
+                }
+            ]
+        },
+        {
+            "id": "plancha-toque-hombro",
+            "name": "Plancha con Toque de Hombro",
+            "order": 8,
+            "type": "core",
+            "series": 3,
+            "reps": "20 toques",
+            "rest": "45s",
+            "weight": "peso corporal",
+            "tip": "Evita rotar caderas y mantén el cuerpo en bloque.",
+            "steps": [
+                {
+                    "text": "Colocate en plancha alta con pies un poco abiertos."
+                },
+                {
+                    "text": "Toca hombro contrario alternando manos sin mover la cadera."
+                },
+                {
+                    "text": "Mantén respiracion constante durante toda la serie."
+                }
+            ]
+        },
+        {
+            "id": "dead-bug-controlado",
+            "name": "Dead Bug Controlado",
+            "order": 9,
+            "type": "core",
+            "series": 3,
+            "reps": "10 por lado",
+            "rest": "45s",
+            "weight": "peso corporal",
+            "tip": "Presiona la zona lumbar contra el suelo durante cada extension.",
+            "steps": [
+                {
+                    "text": "Acostado boca arriba con brazos arriba y caderas a 90 grados."
+                },
+                {
+                    "text": "Extiende brazo y pierna opuesta de forma lenta y controlada."
+                },
+                {
+                    "text": "Vuelve al centro y alterna lados sin perder tension abdominal."
+                }
+            ]
+        }
+    ]
+}

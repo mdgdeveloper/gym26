@@ -11,6 +11,7 @@ import martesTorsoFase2Semana4 from "./routines/martes-torso-fase2-semana4.json"
 import martesTorsoFase3Semana5 from "./routines/martes-torso-fase3-semana5.json";
 import juevesPiernaEspaldaFase3Semana5 from "./routines/jueves-pierna-espalda-fase3-semana5.json";
 import juevesCuerpoCompletoFase3Semana6 from "./routines/jueves-cuerpo-completo-fase3-semana6.json";
+import juevesCuerpoCompletoFase3Semana8 from "./routines/jueves-cuerpo-completo-fase3-semana8.json";
 
 // ─── ARRAY DE TODAS LAS RUTINAS ─── (orden: más reciente primero)
 const allRoutines: Routine[] = [
@@ -23,6 +24,7 @@ const allRoutines: Routine[] = [
   martesTorsoFase3Semana5 as unknown as Routine,
   juevesPiernaEspaldaFase3Semana5 as unknown as Routine,
   juevesCuerpoCompletoFase3Semana6 as unknown as Routine,
+  juevesCuerpoCompletoFase3Semana8 as unknown as Routine,
 ];
 
 export function getAllRoutines(): Routine[] {
