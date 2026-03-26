@@ -2,7 +2,7 @@
     "id": "jueves-cuerpo-completo-fase3-semana8",
     "title": "JUEVES · CUERPO COMPLETO · Fase 3 - Semana 8",
     "date": "2026-03-26",
-    "focus": "Cuerpo completo · Trabajo global de fuerza y acondicionamiento",
+    "focus": "Cuerpo completo · Rutina simple con maquinas generales",
     "phase": "Fase 3 - Consolidacion",
     "week": 8,
     "summary": {
@@ -67,200 +67,200 @@
     ],
     "exercises": [
         {
-            "id": "sentadilla-goblet-mancuerna",
-            "name": "Sentadilla Goblet con Mancuerna",
+            "id": "prensa-piernas-45",
+            "name": "Prensa de Piernas 45°",
             "order": 1,
             "type": "principal",
             "series": 4,
-            "reps": "8-10",
+            "reps": "10",
             "rest": "2 min",
             "weight": "moderado-alto",
-            "tip": "Mantén el torso firme y baja hasta un rango comodo sin colapsar rodillas.",
+            "tip": "Empuja con toda la planta del pie y evita bloquear rodillas.",
             "steps": [
                 {
-                    "text": "Sujeta una mancuerna al pecho con pies al ancho de hombros."
+                    "text": "Ajusta asiento y coloca pies al ancho de hombros."
                 },
                 {
-                    "text": "Desciende controlado llevando cadera hacia atras y rodillas alineadas."
+                    "text": "Baja controlado hasta 90 grados de rodilla."
                 },
                 {
-                    "text": "Empuja el suelo para subir manteniendo el abdomen activo."
+                    "text": "Empuja fuerte hacia arriba con el abdomen activo."
                 }
             ]
         },
         {
-            "id": "press-inclinado-mancuernas",
-            "name": "Press Inclinado con Mancuernas",
+            "id": "press-pecho-maquina",
+            "name": "Press de Pecho en Maquina",
             "order": 2,
             "type": "principal",
             "series": 4,
-            "reps": "8-10",
+            "reps": "10",
             "rest": "2 min",
             "weight": "moderado-alto",
-            "tip": "Controla la bajada y evita cerrar hombros al final del recorrido.",
+            "tip": "Mantén escapulas firmes y movimiento controlado.",
             "steps": [
                 {
-                    "text": "Ajusta banco inclinado y coloca pies firmes en el suelo."
+                    "text": "Ajusta asiento para alinear empunaduras con el pecho."
                 },
                 {
-                    "text": "Baja mancuernas hacia linea media del pecho con codos a 45 grados."
+                    "text": "Empuja hacia delante sin despegar espalda del respaldo."
                 },
                 {
-                    "text": "Empuja hacia arriba sin chocar mancuernas."
+                    "text": "Vuelve lento hasta el inicio sin rebote."
                 }
             ]
         },
         {
-            "id": "remo-mancuerna-apoyo-banco",
-            "name": "Remo con Mancuerna con Apoyo en Banco",
+            "id": "jalon-pecho-polea",
+            "name": "Jalon al Pecho en Polea",
             "order": 3,
             "type": "principal",
             "series": 4,
-            "reps": "8-10 por lado",
+            "reps": "10",
             "rest": "90s",
             "weight": "moderado-alto",
-            "tip": "Lleva el codo hacia la cadera para cargar dorsal y espalda media.",
+            "tip": "Lleva codos abajo y pecho alto en cada repeticion.",
             "steps": [
                 {
-                    "text": "Apoya mano y rodilla en banco manteniendo espalda neutra."
+                    "text": "Siéntate y fija los muslos bajo almohadilla."
                 },
                 {
-                    "text": "Tira la mancuerna hacia el costado sin girar el tronco."
+                    "text": "Tira la barra hacia la parte alta del pecho."
                 },
                 {
-                    "text": "Baja lento hasta extender brazo sin perder tension."
+                    "text": "Sube controlado hasta casi estirar brazos."
                 }
             ]
         },
         {
-            "id": "peso-muerto-rumano-mancuernas",
-            "name": "Peso Muerto Rumano con Mancuernas",
+            "id": "remo-sentado-maquina",
+            "name": "Remo Sentado en Maquina",
             "order": 4,
             "type": "secundario",
             "series": 3,
             "reps": "10-12",
             "rest": "90s",
             "weight": "moderado",
-            "tip": "Mantén la espalda larga y siente el estiramiento en isquios.",
+            "tip": "Aprieta espalda un segundo al final del tiron.",
             "steps": [
                 {
-                    "text": "Inicia de pie con mancuernas al frente y rodillas semieflexionadas."
+                    "text": "Apoya el pecho o mantén torso firme y neutro."
                 },
                 {
-                    "text": "Empuja cadera hacia atras mientras deslizas las mancuernas cerca de piernas."
+                    "text": "Lleva empunaduras hacia el abdomen bajo."
                 },
                 {
-                    "text": "Vuelve arriba apretando gluteos al final."
+                    "text": "Regresa lento sin perder tension."
                 }
             ]
         },
         {
-            "id": "jalon-pecho-agarre-neutro",
-            "name": "Jalon al Pecho en Polea (Agarre Neutro)",
+            "id": "press-hombro-maquina",
+            "name": "Press de Hombro en Maquina",
             "order": 5,
             "type": "secundario",
             "series": 3,
             "reps": "10-12",
             "rest": "75s",
             "weight": "moderado",
-            "tip": "Inicia cada repeticion con hombros abajo y pecho abierto.",
+            "tip": "No arquees la espalda; mantén abdomen activo.",
             "steps": [
                 {
-                    "text": "Ajusta muslos bajo almohadilla y toma agarre neutro."
+                    "text": "Ajusta respaldo y agarra empunaduras a la altura de hombros."
                 },
                 {
-                    "text": "Tira hacia la parte alta del pecho sin balancear el torso."
+                    "text": "Empuja hacia arriba en linea recta."
                 },
                 {
-                    "text": "Regresa controlado manteniendo tension en dorsales."
+                    "text": "Baja controlado hasta 90 grados de codo."
                 }
             ]
         },
         {
-            "id": "zancadas-caminando-mancuernas",
-            "name": "Zancadas Caminando con Mancuernas",
+            "id": "curl-femoral-sentado",
+            "name": "Curl Femoral Sentado en Maquina",
             "order": 6,
             "type": "secundario",
             "series": 3,
-            "reps": "10 por pierna",
+            "reps": "12",
             "rest": "75s",
             "weight": "moderado",
-            "tip": "Da pasos estables y mantén la rodilla delantera alineada con el pie.",
+            "tip": "Haz una pausa corta al final para activar isquios.",
             "steps": [
                 {
-                    "text": "Sujeta mancuernas a los lados y activa el abdomen."
+                    "text": "Ajusta rodillo sobre tobillos y espalda al respaldo."
                 },
                 {
-                    "text": "Avanza en zancada hasta casi tocar el suelo con la rodilla trasera."
+                    "text": "Flexiona rodillas llevando talones hacia atras."
                 },
                 {
-                    "text": "Impulsa con la pierna delantera y continua alternando."
+                    "text": "Vuelve lento sin dejar caer el peso."
                 }
             ]
         },
         {
-            "id": "elevaciones-laterales-mancuernas",
-            "name": "Elevaciones Laterales con Mancuernas",
+            "id": "extension-cuadriceps-maquina",
+            "name": "Extension de Cuadriceps en Maquina",
             "order": 7,
             "type": "secundario",
             "series": 3,
-            "reps": "12-15",
+            "reps": "12",
             "rest": "60s",
             "weight": "ligero-moderado",
-            "tip": "Sube hasta la linea de hombros sin encoger trapecios.",
+            "tip": "Sube con control y aprieta cuadriceps arriba.",
             "steps": [
                 {
-                    "text": "Colocate de pie con leve flexion de codos."
+                    "text": "Siéntate con rodillas alineadas al eje de la maquina."
                 },
                 {
-                    "text": "Eleva los brazos hacia los lados en arco controlado."
+                    "text": "Extiende rodillas hasta casi bloquear."
                 },
                 {
-                    "text": "Desciende lento sin perder postura."
+                    "text": "Baja en 2-3 segundos para mantener tension."
                 }
             ]
         },
         {
-            "id": "plancha-toque-hombro",
-            "name": "Plancha con Toque de Hombro",
+            "id": "crunch-maquina",
+            "name": "Crunch en Maquina",
             "order": 8,
             "type": "core",
             "series": 3,
-            "reps": "20 toques",
+            "reps": "12-15",
             "rest": "45s",
-            "weight": "peso corporal",
-            "tip": "Evita rotar caderas y mantén el cuerpo en bloque.",
+            "weight": "ligero-moderado",
+            "tip": "Contrae abdomen sin tirar del cuello.",
             "steps": [
                 {
-                    "text": "Colocate en plancha alta con pies un poco abiertos."
+                    "text": "Ajusta asiento y almohadilla para apoyar bien el tronco."
                 },
                 {
-                    "text": "Toca hombro contrario alternando manos sin mover la cadera."
+                    "text": "Flexiona el tronco hacia delante de forma controlada."
                 },
                 {
-                    "text": "Mantén respiracion constante durante toda la serie."
+                    "text": "Regresa lento manteniendo tension abdominal."
                 }
             ]
         },
         {
-            "id": "dead-bug-controlado",
-            "name": "Dead Bug Controlado",
+            "id": "extension-lumbar-maquina",
+            "name": "Extension Lumbar en Maquina",
             "order": 9,
             "type": "core",
             "series": 3,
-            "reps": "10 por lado",
+            "reps": "12-15",
             "rest": "45s",
-            "weight": "peso corporal",
-            "tip": "Presiona la zona lumbar contra el suelo durante cada extension.",
+            "weight": "ligero-moderado",
+            "tip": "Sube hasta linea neutra, sin hiperextender la espalda.",
             "steps": [
                 {
-                    "text": "Acostado boca arriba con brazos arriba y caderas a 90 grados."
+                    "text": "Ajusta la maquina para apoyar pelvis y tronco con comodidad."
                 },
                 {
-                    "text": "Extiende brazo y pierna opuesta de forma lenta y controlada."
+                    "text": "Extiende el torso de forma suave y controlada."
                 },
                 {
-                    "text": "Vuelve al centro y alterna lados sin perder tension abdominal."
+                    "text": "Vuelve al inicio manteniendo el abdomen activo."
                 }
             ]
         }
